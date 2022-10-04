@@ -16,5 +16,22 @@ namespace IS_Team1_Project
         {
             InitializeComponent();
         }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            // Open the StudentMain form and close this one
+            StudentMain studentMain = new StudentMain();
+            studentMain.Show();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtStudentNo.Clear();
+            txtEmail.Clear();
+            txtName.Clear();
+            txtSurname.Clear();
+            txtPassword.Clear();
+            txtConfirmPassword.Clear();
+        }
     }
 }
