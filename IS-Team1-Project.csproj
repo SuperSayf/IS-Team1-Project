@@ -230,5 +230,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-mortarboard-24.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheTransfers_2_NoBackground.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
