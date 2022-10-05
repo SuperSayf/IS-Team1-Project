@@ -73,6 +73,16 @@ namespace IS_Team1_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Addadminicon {
+            get {
+                object obj = ResourceManager.GetObject("Addadminicon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_books_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-books-24", resourceCulture);
@@ -177,6 +187,16 @@ namespace IS_Team1_Project.Properties {
         internal static System.Drawing.Bitmap kisspng_computer_icons_login_user_download_clip_art_5b391b7f4380191 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-computer-icons-login-user-download-clip-art-5b391b7f4380191", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Profileicon {
+            get {
+                object obj = ResourceManager.GetObject("Profileicon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

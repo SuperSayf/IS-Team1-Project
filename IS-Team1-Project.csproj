@@ -233,5 +233,9 @@
   <ItemGroup>
     <None Include="Resources\TheTransfers_2_NoBackground.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Addadminicon.png" />
+    <Content Include="Resources\profileicon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

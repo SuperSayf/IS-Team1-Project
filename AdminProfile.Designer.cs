@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminProfile));
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtboxFirstName = new System.Windows.Forms.TextBox();
             this.txtBoxLastName = new System.Windows.Forms.TextBox();
             this.txtboxAdminNo = new System.Windows.Forms.TextBox();
@@ -40,9 +38,10 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnAddadmin = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -57,17 +56,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Profile";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(772, 90);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 91);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
             // 
             // txtboxFirstName
             // 
@@ -191,20 +179,31 @@
             this.label1.Text = "Add admin";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // btnAddadmin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(1158, 61);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 91);
-            this.button1.TabIndex = 12;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnAddadmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
+            this.btnAddadmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddadmin.FlatAppearance.BorderSize = 0;
+            this.btnAddadmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddadmin.Image = global::IS_Team1_Project.Properties.Resources.Addadminicon;
+            this.btnAddadmin.Location = new System.Drawing.Point(1158, 61);
+            this.btnAddadmin.Name = "btnAddadmin";
+            this.btnAddadmin.Size = new System.Drawing.Size(94, 91);
+            this.btnAddadmin.TabIndex = 12;
+            this.btnAddadmin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnAddadmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnAddadmin.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::IS_Team1_Project.Properties.Resources.Profileicon;
+            this.pictureBox1.Location = new System.Drawing.Point(772, 90);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(94, 91);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // AdminProfile
             // 
@@ -212,7 +211,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(1620, 1040);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAddadmin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnUpdate);
@@ -225,9 +224,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminProfile";
             this.Load += new System.EventHandler(this.AdminProfile_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,6 +245,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddadmin;
     }
 }
