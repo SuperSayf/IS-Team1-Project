@@ -246,6 +246,7 @@
     <None Include="Resources\Addadminicon.png" />
     <None Include="Resources\icons8-close-15.png" />
     <None Include="Resources\icons8-subtract-15.png" />
+    <None Include="Resources\icons8-back-15.png" />
     <Content Include="Resources\profileicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -44,6 +44,11 @@ namespace IS_Team1_Project
         {
             // Close the application
             Application.Exit();
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+            this.Close();
         }
     }
 }
