@@ -53,8 +53,6 @@ namespace IS_Team1_Project
             if (sidebarExpand)
             {
                 sidebar.Width -= 10;
-                btnClose.Location = new Point(btnClose.Location.X + 10, btnClose.Location.Y);
-                btnMinimize.Location = new Point(btnMinimize.Location.X + 10, btnMinimize.Location.Y);
                 if (sidebar.Width <= sidebar.MinimumSize.Width)
                 {
                     sidebarExpand = false;
@@ -64,8 +62,6 @@ namespace IS_Team1_Project
             else
             {
                 sidebar.Width += 10;
-                btnClose.Location = new Point(btnClose.Location.X - 10, btnClose.Location.Y);
-                btnMinimize.Location = new Point(btnMinimize.Location.X - 10, btnMinimize.Location.Y);
                 if (sidebar.Width >= sidebar.MaximumSize.Width)
                 {
                     sidebarExpand = true;
@@ -101,6 +97,23 @@ namespace IS_Team1_Project
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            // Minimize the application
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void StudentMain_Shown(object sender, EventArgs e)
+        {
+            btnHome.PerformClick();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            // Close the application
+            Application.Exit();
+        }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
         {
             // Minimize the application
             this.WindowState = FormWindowState.Minimized;

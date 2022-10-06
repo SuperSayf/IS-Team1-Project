@@ -39,12 +39,8 @@
             this.lblC2Level = new System.Windows.Forms.Label();
             this.lblC2Academic = new System.Windows.Forms.Label();
             this.lblCourseName2 = new System.Windows.Forms.Label();
-            this.btnMinimize = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.PictureBox();
             this.pnl1.SuspendLayout();
             this.pnl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -52,10 +48,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(572, 41);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(429, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 34);
+            this.label1.Size = new System.Drawing.Size(109, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Courses";
             // 
@@ -67,9 +62,10 @@
             this.pnl1.Controls.Add(this.lblC1Academic);
             this.pnl1.Controls.Add(this.lblCourseName1);
             this.pnl1.ForeColor = System.Drawing.Color.White;
-            this.pnl1.Location = new System.Drawing.Point(130, 255);
+            this.pnl1.Location = new System.Drawing.Point(98, 207);
+            this.pnl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl1.Name = "pnl1";
-            this.pnl1.Size = new System.Drawing.Size(513, 321);
+            this.pnl1.Size = new System.Drawing.Size(385, 261);
             this.pnl1.TabIndex = 2;
             // 
             // lblC1Students
@@ -77,10 +73,9 @@
             this.lblC1Students.AutoSize = true;
             this.lblC1Students.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblC1Students.ForeColor = System.Drawing.Color.White;
-            this.lblC1Students.Location = new System.Drawing.Point(167, 249);
-            this.lblC1Students.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblC1Students.Location = new System.Drawing.Point(125, 202);
             this.lblC1Students.Name = "lblC1Students";
-            this.lblC1Students.Size = new System.Drawing.Size(192, 32);
+            this.lblC1Students.Size = new System.Drawing.Size(150, 26);
             this.lblC1Students.TabIndex = 5;
             this.lblC1Students.Text = "100 students";
             // 
@@ -89,10 +84,9 @@
             this.lblC1Level.AutoSize = true;
             this.lblC1Level.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblC1Level.ForeColor = System.Drawing.Color.White;
-            this.lblC1Level.Location = new System.Drawing.Point(133, 155);
-            this.lblC1Level.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblC1Level.Location = new System.Drawing.Point(100, 126);
             this.lblC1Level.Name = "lblC1Level";
-            this.lblC1Level.Size = new System.Drawing.Size(256, 34);
+            this.lblC1Level.Size = new System.Drawing.Size(204, 28);
             this.lblC1Level.TabIndex = 4;
             this.lblC1Level.Text = "Your Level: Easy";
             // 
@@ -101,10 +95,9 @@
             this.lblC1Academic.AutoSize = true;
             this.lblC1Academic.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblC1Academic.ForeColor = System.Drawing.Color.White;
-            this.lblC1Academic.Location = new System.Drawing.Point(182, 100);
-            this.lblC1Academic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblC1Academic.Location = new System.Drawing.Point(136, 81);
             this.lblC1Academic.Name = "lblC1Academic";
-            this.lblC1Academic.Size = new System.Drawing.Size(177, 34);
+            this.lblC1Academic.Size = new System.Drawing.Size(139, 28);
             this.lblC1Academic.TabIndex = 3;
             this.lblC1Academic.Text = "Ms. Neetu  ";
             // 
@@ -113,10 +106,9 @@
             this.lblCourseName1.AutoSize = true;
             this.lblCourseName1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCourseName1.ForeColor = System.Drawing.Color.White;
-            this.lblCourseName1.Location = new System.Drawing.Point(182, 66);
-            this.lblCourseName1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCourseName1.Location = new System.Drawing.Point(136, 54);
             this.lblCourseName1.Name = "lblCourseName1";
-            this.lblCourseName1.Size = new System.Drawing.Size(146, 34);
+            this.lblCourseName1.Size = new System.Drawing.Size(116, 28);
             this.lblCourseName1.TabIndex = 2;
             this.lblCourseName1.Text = "Course 1";
             // 
@@ -127,9 +119,10 @@
             this.pnl2.Controls.Add(this.lblC2Level);
             this.pnl2.Controls.Add(this.lblC2Academic);
             this.pnl2.Controls.Add(this.lblCourseName2);
-            this.pnl2.Location = new System.Drawing.Point(741, 255);
+            this.pnl2.Location = new System.Drawing.Point(556, 207);
+            this.pnl2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnl2.Name = "pnl2";
-            this.pnl2.Size = new System.Drawing.Size(513, 321);
+            this.pnl2.Size = new System.Drawing.Size(385, 261);
             this.pnl2.TabIndex = 3;
             // 
             // lblC2Students
@@ -137,10 +130,9 @@
             this.lblC2Students.AutoSize = true;
             this.lblC2Students.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblC2Students.ForeColor = System.Drawing.Color.White;
-            this.lblC2Students.Location = new System.Drawing.Point(187, 249);
-            this.lblC2Students.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblC2Students.Location = new System.Drawing.Point(140, 202);
             this.lblC2Students.Name = "lblC2Students";
-            this.lblC2Students.Size = new System.Drawing.Size(192, 32);
+            this.lblC2Students.Size = new System.Drawing.Size(150, 26);
             this.lblC2Students.TabIndex = 6;
             this.lblC2Students.Text = "100 students";
             // 
@@ -149,10 +141,9 @@
             this.lblC2Level.AutoSize = true;
             this.lblC2Level.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblC2Level.ForeColor = System.Drawing.Color.White;
-            this.lblC2Level.Location = new System.Drawing.Point(135, 155);
-            this.lblC2Level.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblC2Level.Location = new System.Drawing.Point(101, 126);
             this.lblC2Level.Name = "lblC2Level";
-            this.lblC2Level.Size = new System.Drawing.Size(299, 34);
+            this.lblC2Level.Size = new System.Drawing.Size(239, 28);
             this.lblC2Level.TabIndex = 5;
             this.lblC2Level.Text = "Your Level: Difficult";
             // 
@@ -161,10 +152,9 @@
             this.lblC2Academic.AutoSize = true;
             this.lblC2Academic.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblC2Academic.ForeColor = System.Drawing.Color.White;
-            this.lblC2Academic.Location = new System.Drawing.Point(187, 100);
-            this.lblC2Academic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblC2Academic.Location = new System.Drawing.Point(140, 81);
             this.lblC2Academic.Name = "lblC2Academic";
-            this.lblC2Academic.Size = new System.Drawing.Size(160, 34);
+            this.lblC2Academic.Size = new System.Drawing.Size(129, 28);
             this.lblC2Academic.TabIndex = 4;
             this.lblC2Academic.Text = "Ms. Spark";
             // 
@@ -173,46 +163,22 @@
             this.lblCourseName2.AutoSize = true;
             this.lblCourseName2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCourseName2.ForeColor = System.Drawing.Color.White;
-            this.lblCourseName2.Location = new System.Drawing.Point(187, 66);
-            this.lblCourseName2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCourseName2.Location = new System.Drawing.Point(140, 54);
             this.lblCourseName2.Name = "lblCourseName2";
-            this.lblCourseName2.Size = new System.Drawing.Size(146, 34);
+            this.lblCourseName2.Size = new System.Drawing.Size(116, 28);
             this.lblCourseName2.TabIndex = 3;
             this.lblCourseName2.Text = "Course 2";
             // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Image = global::IS_Team1_Project.Properties.Resources.icons8_subtract_15;
-            this.btnMinimize.Location = new System.Drawing.Point(1367, 13);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(20, 21);
-            this.btnMinimize.TabIndex = 16;
-            this.btnMinimize.TabStop = false;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Image = global::IS_Team1_Project.Properties.Resources.icons8_close_15;
-            this.btnClose.Location = new System.Drawing.Point(1407, 13);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(20, 21);
-            this.btnClose.TabIndex = 15;
-            this.btnClose.TabStop = false;
-            // 
             // StudentCourses
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
-            this.ClientSize = new System.Drawing.Size(1440, 832);
-            this.Controls.Add(this.btnMinimize);
-            this.Controls.Add(this.btnClose);
+            this.ClientSize = new System.Drawing.Size(1080, 676);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StudentCourses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentCourses";
@@ -220,8 +186,6 @@
             this.pnl1.PerformLayout();
             this.pnl2.ResumeLayout(false);
             this.pnl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -240,7 +204,5 @@
         private System.Windows.Forms.Label lblC1Level;
         private System.Windows.Forms.Label lblC2Level;
         private System.Windows.Forms.Label lblC2Students;
-        private System.Windows.Forms.PictureBox btnMinimize;
-        private System.Windows.Forms.PictureBox btnClose;
     }
 }
