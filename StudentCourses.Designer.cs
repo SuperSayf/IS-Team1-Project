@@ -30,17 +30,21 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.pnl1 = new System.Windows.Forms.Panel();
+            this.lblC1Students = new System.Windows.Forms.Label();
+            this.lblC1Level = new System.Windows.Forms.Label();
             this.lblC1Academic = new System.Windows.Forms.Label();
             this.lblCourseName1 = new System.Windows.Forms.Label();
             this.pnl2 = new System.Windows.Forms.Panel();
+            this.lblC2Students = new System.Windows.Forms.Label();
+            this.lblC2Level = new System.Windows.Forms.Label();
             this.lblC2Academic = new System.Windows.Forms.Label();
             this.lblCourseName2 = new System.Windows.Forms.Label();
-            this.lblC1Level = new System.Windows.Forms.Label();
-            this.lblC1Students = new System.Windows.Forms.Label();
-            this.lblC2Level = new System.Windows.Forms.Label();
-            this.lblC2Students = new System.Windows.Forms.Label();
+            this.btnMinimize = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.PictureBox();
             this.pnl1.SuspendLayout();
             this.pnl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,6 +71,30 @@
             this.pnl1.Name = "pnl1";
             this.pnl1.Size = new System.Drawing.Size(513, 321);
             this.pnl1.TabIndex = 2;
+            // 
+            // lblC1Students
+            // 
+            this.lblC1Students.AutoSize = true;
+            this.lblC1Students.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblC1Students.ForeColor = System.Drawing.Color.White;
+            this.lblC1Students.Location = new System.Drawing.Point(167, 249);
+            this.lblC1Students.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblC1Students.Name = "lblC1Students";
+            this.lblC1Students.Size = new System.Drawing.Size(192, 32);
+            this.lblC1Students.TabIndex = 5;
+            this.lblC1Students.Text = "100 students";
+            // 
+            // lblC1Level
+            // 
+            this.lblC1Level.AutoSize = true;
+            this.lblC1Level.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblC1Level.ForeColor = System.Drawing.Color.White;
+            this.lblC1Level.Location = new System.Drawing.Point(133, 155);
+            this.lblC1Level.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblC1Level.Name = "lblC1Level";
+            this.lblC1Level.Size = new System.Drawing.Size(256, 34);
+            this.lblC1Level.TabIndex = 4;
+            this.lblC1Level.Text = "Your Level: Easy";
             // 
             // lblC1Academic
             // 
@@ -104,6 +132,30 @@
             this.pnl2.Size = new System.Drawing.Size(513, 321);
             this.pnl2.TabIndex = 3;
             // 
+            // lblC2Students
+            // 
+            this.lblC2Students.AutoSize = true;
+            this.lblC2Students.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblC2Students.ForeColor = System.Drawing.Color.White;
+            this.lblC2Students.Location = new System.Drawing.Point(187, 249);
+            this.lblC2Students.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblC2Students.Name = "lblC2Students";
+            this.lblC2Students.Size = new System.Drawing.Size(192, 32);
+            this.lblC2Students.TabIndex = 6;
+            this.lblC2Students.Text = "100 students";
+            // 
+            // lblC2Level
+            // 
+            this.lblC2Level.AutoSize = true;
+            this.lblC2Level.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblC2Level.ForeColor = System.Drawing.Color.White;
+            this.lblC2Level.Location = new System.Drawing.Point(135, 155);
+            this.lblC2Level.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblC2Level.Name = "lblC2Level";
+            this.lblC2Level.Size = new System.Drawing.Size(299, 34);
+            this.lblC2Level.TabIndex = 5;
+            this.lblC2Level.Text = "Your Level: Difficult";
+            // 
             // lblC2Academic
             // 
             this.lblC2Academic.AutoSize = true;
@@ -128,53 +180,25 @@
             this.lblCourseName2.TabIndex = 3;
             this.lblCourseName2.Text = "Course 2";
             // 
-            // lblC1Level
+            // btnMinimize
             // 
-            this.lblC1Level.AutoSize = true;
-            this.lblC1Level.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblC1Level.ForeColor = System.Drawing.Color.White;
-            this.lblC1Level.Location = new System.Drawing.Point(133, 155);
-            this.lblC1Level.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblC1Level.Name = "lblC1Level";
-            this.lblC1Level.Size = new System.Drawing.Size(256, 34);
-            this.lblC1Level.TabIndex = 4;
-            this.lblC1Level.Text = "Your Level: Easy";
+            this.btnMinimize.Image = global::IS_Team1_Project.Properties.Resources.icons8_subtract_15;
+            this.btnMinimize.Location = new System.Drawing.Point(1367, 13);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(20, 21);
+            this.btnMinimize.TabIndex = 16;
+            this.btnMinimize.TabStop = false;
             // 
-            // lblC1Students
+            // btnClose
             // 
-            this.lblC1Students.AutoSize = true;
-            this.lblC1Students.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblC1Students.ForeColor = System.Drawing.Color.White;
-            this.lblC1Students.Location = new System.Drawing.Point(167, 249);
-            this.lblC1Students.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblC1Students.Name = "lblC1Students";
-            this.lblC1Students.Size = new System.Drawing.Size(192, 32);
-            this.lblC1Students.TabIndex = 5;
-            this.lblC1Students.Text = "100 students";
-            // 
-            // lblC2Level
-            // 
-            this.lblC2Level.AutoSize = true;
-            this.lblC2Level.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblC2Level.ForeColor = System.Drawing.Color.White;
-            this.lblC2Level.Location = new System.Drawing.Point(135, 155);
-            this.lblC2Level.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblC2Level.Name = "lblC2Level";
-            this.lblC2Level.Size = new System.Drawing.Size(299, 34);
-            this.lblC2Level.TabIndex = 5;
-            this.lblC2Level.Text = "Your Level: Difficult";
-            // 
-            // lblC2Students
-            // 
-            this.lblC2Students.AutoSize = true;
-            this.lblC2Students.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblC2Students.ForeColor = System.Drawing.Color.White;
-            this.lblC2Students.Location = new System.Drawing.Point(187, 249);
-            this.lblC2Students.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblC2Students.Name = "lblC2Students";
-            this.lblC2Students.Size = new System.Drawing.Size(192, 32);
-            this.lblC2Students.TabIndex = 6;
-            this.lblC2Students.Text = "100 students";
+            this.btnClose.Image = global::IS_Team1_Project.Properties.Resources.icons8_close_15;
+            this.btnClose.Location = new System.Drawing.Point(1407, 13);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(20, 21);
+            this.btnClose.TabIndex = 15;
+            this.btnClose.TabStop = false;
             // 
             // StudentCourses
             // 
@@ -182,6 +206,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(1440, 832);
+            this.Controls.Add(this.btnMinimize);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.pnl2);
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.label1);
@@ -194,6 +220,8 @@
             this.pnl1.PerformLayout();
             this.pnl2.ResumeLayout(false);
             this.pnl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +240,7 @@
         private System.Windows.Forms.Label lblC1Level;
         private System.Windows.Forms.Label lblC2Level;
         private System.Windows.Forms.Label lblC2Students;
+        private System.Windows.Forms.PictureBox btnMinimize;
+        private System.Windows.Forms.PictureBox btnClose;
     }
 }

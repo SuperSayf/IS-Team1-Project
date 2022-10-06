@@ -44,11 +44,24 @@ namespace IS_Team1_Project
         {
             // Close the application
             Application.Exit();
+        }
         private void btnBack_Click(object sender, EventArgs e)
         {
             frmLogin frmLogin = new frmLogin();
             frmLogin.Show();
             this.Close();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            // Minimize the application
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            // Close the application
+            Application.Exit();
         }
     }
 }
