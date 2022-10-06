@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 
 namespace IS_Team1_Project
 {
-    public partial class frmLogin : Form
+    public partial class LoginAdmin : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -24,37 +24,25 @@ namespace IS_Team1_Project
            int nHeightEllipse // width of ellipse
        );
 
-        public frmLogin()
+        public LoginAdmin()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            // Open the StudentMain form and close this one
-            StudentMain studentMain = new StudentMain();
-            studentMain.Show();
-            this.Hide();
+            AdminMain adminMain = new AdminMain();
+            adminMain.Show();
+            this.Close();
         }
 
-        private void lblAdmin_Click(object sender, EventArgs e)
+        private void lblStudent_Click(object sender, EventArgs e)
         {
-            LoginAdmin loginAdmin = new LoginAdmin();
-            loginAdmin.Show();
-            this.Hide();
-        }
-
-        private void lblRegister_Click(object sender, EventArgs e)
-        {
-            StudentRegister studentRegister = new StudentRegister();
-            studentRegister.Show();
-            this.Hide();
+            frmLogin login = new frmLogin();
+            login.Show();
+            this.Close();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

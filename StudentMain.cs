@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace IS_Team1_Project
 {
@@ -14,9 +15,22 @@ namespace IS_Team1_Project
     {
         private bool sidebarExpand;
 
+        [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn
+        (
+           int nLeftRect,     // x-coordinate of upper-left corner
+           int nTopRect,      // y-coordinate of upper-left corner
+           int nRightRect,    // x-coordinate of lower-right corner
+           int nBottomRect,   // y-coordinate of lower-right corner
+           int nWidthEllipse, // height of ellipse
+           int nHeightEllipse // width of ellipse
+        );
+
         public StudentMain()
         {
             InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
         public void loadform(object form)
@@ -39,6 +53,8 @@ namespace IS_Team1_Project
             if (sidebarExpand)
             {
                 sidebar.Width -= 10;
+                btnClose.Location = new Point(btnClose.Location.X + 10, btnClose.Location.Y);
+                btnMinimize.Location = new Point(btnMinimize.Location.X + 10, btnMinimize.Location.Y);
                 if (sidebar.Width <= sidebar.MinimumSize.Width)
                 {
                     sidebarExpand = false;
@@ -48,6 +64,8 @@ namespace IS_Team1_Project
             else
             {
                 sidebar.Width += 10;
+                btnClose.Location = new Point(btnClose.Location.X - 10, btnClose.Location.Y);
+                btnMinimize.Location = new Point(btnMinimize.Location.X - 10, btnMinimize.Location.Y);
                 if (sidebar.Width >= sidebar.MaximumSize.Width)
                 {
                     sidebarExpand = true;
@@ -74,6 +92,18 @@ namespace IS_Team1_Project
         private void btnProfile_Click(object sender, EventArgs e)
         {
             loadform(new StudentProfile());
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            // Close the application
+            Application.Exit();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            // Minimize the application
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

@@ -19,7 +19,7 @@ namespace IS_Team1_Project.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -93,6 +93,16 @@ namespace IS_Team1_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_15 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-15", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_home {
             get {
                 object obj = ResourceManager.GetObject("icons8-home", resourceCulture);
@@ -146,6 +156,16 @@ namespace IS_Team1_Project.Properties {
         internal static System.Drawing.Bitmap icons8_progress_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8-progress-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_subtract_15 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-subtract-15", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

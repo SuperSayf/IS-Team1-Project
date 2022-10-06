@@ -71,6 +71,8 @@
             this.button12 = new System.Windows.Forms.Button();
             this.tmrSidebar = new System.Windows.Forms.Timer(this.components);
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.btnMinimize = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
@@ -86,6 +88,9 @@
             this.panel13.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.pnlMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -671,11 +676,33 @@
             // 
             // pnlMain
             // 
+            this.pnlMain.Controls.Add(this.btnMinimize);
+            this.pnlMain.Controls.Add(this.btnClose);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(77, 0);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1080, 676);
             this.pnlMain.TabIndex = 2;
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Image = global::IS_Team1_Project.Properties.Resources.icons8_subtract_15;
+            this.btnMinimize.Location = new System.Drawing.Point(1023, 12);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(15, 17);
+            this.btnMinimize.TabIndex = 14;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Image = global::IS_Team1_Project.Properties.Resources.icons8_close_15;
+            this.btnClose.Location = new System.Drawing.Point(1053, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(15, 17);
+            this.btnClose.TabIndex = 13;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // AdminMain
             // 
@@ -705,6 +732,9 @@
             this.panel13.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.pnlMain.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -753,5 +783,7 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Panel pnlMain;
+        private System.Windows.Forms.PictureBox btnMinimize;
+        private System.Windows.Forms.PictureBox btnClose;
     }
 }
