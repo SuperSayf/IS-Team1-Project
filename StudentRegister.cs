@@ -33,5 +33,17 @@ namespace IS_Team1_Project
             txtPassword.Clear();
             txtConfirmPassword.Clear();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            // Minimize the application
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            // Close the application
+            Application.Exit();
+        }
     }
 }
