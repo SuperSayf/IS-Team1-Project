@@ -33,5 +33,12 @@ namespace IS_Team1_Project
             txtPassword.Clear();
             txtConfirmPassword.Clear();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+            this.Close();
+        }
     }
 }
