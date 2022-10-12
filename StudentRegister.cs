@@ -15,6 +15,8 @@ namespace IS_Team1_Project
 {
     public partial class StudentRegister : Form
     {
+        
+        
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -46,6 +48,17 @@ namespace IS_Team1_Project
                 }
                 else
                 {
+
+                    using (OleDbConnection connection = new OleDbConnection(connectionstring))
+                    {
+                        connection.Open();
+                        OleDbCommand command = new OleDbCommand("INSERT INTO courses (student_num) VALUES (@student_num)", connection);
+                        command.Parameters.AddWithValue("@student_num", txtStudentNo.Text);
+                        command.ExecuteNonQuery();
+                        connection.Close();
+
+                    }
+
                     using (OleDbConnection connection = new OleDbConnection(connectionstring))
                     {
                         connection.Open();
@@ -56,11 +69,12 @@ namespace IS_Team1_Project
                         command.Parameters.AddWithValue("@student_surname", txtSurname.Text);
                         command.Parameters.AddWithValue("@student_password", txtPassword.Text);
                         command.ExecuteNonQuery();
-                        connection.Close();
+                        connection.Close();               
                         MessageBox.Show("Student registered successfully");
-                        StudentMain studentMain = new StudentMain();
-                        studentMain.Show();
+                        frmLogin studentLogin = new frmLogin();
+                        studentLogin.Show();
                         this.Close();
+                        
                     }
                 }
             }

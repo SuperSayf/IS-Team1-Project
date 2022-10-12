@@ -16,6 +16,7 @@ namespace IS_Team1_Project
 {
     public partial class frmLogin : Form
     {
+        public static string StudentNum;
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
        (
@@ -55,6 +56,7 @@ namespace IS_Team1_Project
                     if (reader.Read())
                     {
                         // If the student number and password match, then open the student dashboard
+                        StudentNum = txtStudentNum.Text;
                         StudentMain studentMain = new StudentMain();
                         studentMain.Show();
                         this.Hide();
