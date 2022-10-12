@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Xml.Linq;
+using System.IO;
+using System.Data.OleDb;
 
 namespace IS_Team1_Project
 {
@@ -37,10 +40,66 @@ namespace IS_Team1_Project
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            // Open the StudentMain form and close this one
-            StudentMain studentMain = new StudentMain();
-            studentMain.Show();
-            this.Hide();
+            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "database.accdb");
+
+            if (TxtStudentNum_Validating(sender, new CancelEventArgs()) && TxtPassword_Validating(sender, new CancelEventArgs()))
+            {
+                // Check if the student number and password match
+                using (OleDbConnection connection = new OleDbConnection(connectionstring))
+                {
+                    connection.Open();
+                    OleDbCommand command = new OleDbCommand("SELECT * FROM students WHERE student_num = @student_num AND student_password = @student_password", connection);
+                    command.Parameters.AddWithValue("@student_num", txtStudentNum.Text);
+                    command.Parameters.AddWithValue("@student_password", txtPassword.Text);
+                    OleDbDataReader reader = command.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        // If the student number and password match, then open the student dashboard
+                        StudentMain studentMain = new StudentMain();
+                        studentMain.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid student number or password");
+                    }
+                    connection.Close();
+                }
+            }
+        }
+
+        private bool TxtStudentNum_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtStudentNum.Text))
+            {
+                e.Cancel = true;
+                txtStudentNum.Focus();
+                errorProvider2.SetError(txtStudentNum, "Enter Student Number");
+                return false;
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider2.SetError(txtStudentNum, "");
+                return true;
+            }
+        }
+
+        private bool TxtPassword_Validating(object sender, CancelEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                e.Cancel = true;
+                txtPassword.Focus();
+                errorProvider2.SetError(txtPassword, "Enter password");
+                return false;
+            }
+            else
+            {
+                e.Cancel = false;
+                errorProvider2.SetError(txtPassword, "");
+                return true;
+            }
         }
 
         private void lblAdmin_Click(object sender, EventArgs e)

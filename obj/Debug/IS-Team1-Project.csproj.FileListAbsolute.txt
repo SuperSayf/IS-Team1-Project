@@ -22,4 +22,3 @@ C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\obj\Debug\IS_Team1_
 C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminQuries.resources
 C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentRegister.resources
 C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\obj\Debug\IS_Team1_Project.LoginAdmin.resources
-C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\bin\Debug\database.accdb
