@@ -34,32 +34,32 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.pnlHome = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnHome = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btnCourses = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnProfile = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.tmrSidebar = new System.Windows.Forms.Timer(this.components);
             this.pnlMain = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnCourses = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnProfile = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.pnlHome.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
             // sidebar
@@ -117,54 +117,13 @@
             this.pnlHome.Size = new System.Drawing.Size(200, 46);
             this.pnlHome.TabIndex = 1;
             // 
-            // button2
+            // panel3
             // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::IS_Team1_Project.Properties.Resources.icons8_home_24__1_;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-11, -11);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button2.Size = new System.Drawing.Size(223, 68);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "                  Home";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // tmrSidebar
-            // 
-            this.tmrSidebar.Tick += new System.EventHandler(this.tmrSidebar_Tick);
-            // 
-            // pnlMain
-            // 
-            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(77, 0);
-            this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1080, 676);
-            this.pnlMain.TabIndex = 1;
-            // 
-            // btnMinimize
-            // 
-            this.btnMinimize.Image = global::IS_Team1_Project.Properties.Resources.icons8_subtract_15;
-            this.btnMinimize.Location = new System.Drawing.Point(1100, 12);
-            this.btnMinimize.Name = "btnMinimize";
-            this.btnMinimize.Size = new System.Drawing.Size(15, 17);
-            this.btnMinimize.TabIndex = 18;
-            this.btnMinimize.TabStop = false;
-            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.Image = global::IS_Team1_Project.Properties.Resources.icons8_close_15;
-            this.btnClose.Location = new System.Drawing.Point(1130, 12);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(15, 17);
-            this.btnClose.TabIndex = 17;
-            this.btnClose.TabStop = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.panel3.Controls.Add(this.btnHome);
+            this.panel3.Location = new System.Drawing.Point(8, 8);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 46);
+            this.panel3.TabIndex = 4;
             // 
             // btnHome
             // 
@@ -184,30 +143,31 @@
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // panel3
+            // button2
             // 
-            this.panel3.Controls.Add(this.btnHome);
-            this.panel3.Location = new System.Drawing.Point(8, 8);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 46);
-            this.panel3.TabIndex = 4;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::IS_Team1_Project.Properties.Resources.icons8_home_24__1_;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(-11, -11);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(223, 68);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "                  Home";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // panel4
             // 
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = global::IS_Team1_Project.Properties.Resources.icons8_home_24__1_;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(-11, -11);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(223, 68);
-            this.button7.TabIndex = 3;
-            this.button7.Text = "                  Home";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = true;
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.button7);
+            this.panel4.Location = new System.Drawing.Point(3, 161);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 46);
+            this.panel4.TabIndex = 2;
             // 
             // panel5
             // 
@@ -235,31 +195,22 @@
             this.btnCourses.UseVisualStyleBackColor = true;
             this.btnCourses.Click += new System.EventHandler(this.btnCourses_Click);
             // 
-            // panel4
+            // button7
             // 
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.button7);
-            this.panel4.Location = new System.Drawing.Point(3, 161);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 46);
-            this.panel4.TabIndex = 2;
-            // 
-            // button11
-            // 
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Image = global::IS_Team1_Project.Properties.Resources.icons8_home_24__1_;
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(-11, -11);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.button11.Size = new System.Drawing.Size(223, 68);
-            this.button11.TabIndex = 3;
-            this.button11.Text = "                  Home";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = true;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Image = global::IS_Team1_Project.Properties.Resources.icons8_home_24__1_;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(-11, -11);
+            this.button7.Name = "button7";
+            this.button7.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button7.Size = new System.Drawing.Size(223, 68);
+            this.button7.TabIndex = 3;
+            this.button7.Text = "                  Home";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
@@ -296,6 +247,56 @@
             this.btnProfile.UseVisualStyleBackColor = true;
             this.btnProfile.Click += new System.EventHandler(this.btnProfile_Click);
             // 
+            // button11
+            // 
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Image = global::IS_Team1_Project.Properties.Resources.icons8_home_24__1_;
+            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.Location = new System.Drawing.Point(-11, -11);
+            this.button11.Name = "button11";
+            this.button11.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.button11.Size = new System.Drawing.Size(223, 68);
+            this.button11.TabIndex = 3;
+            this.button11.Text = "                  Home";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // tmrSidebar
+            // 
+            this.tmrSidebar.Interval = 10;
+            this.tmrSidebar.Tick += new System.EventHandler(this.tmrSidebar_Tick);
+            // 
+            // pnlMain
+            // 
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMain.Location = new System.Drawing.Point(77, 0);
+            this.pnlMain.Name = "pnlMain";
+            this.pnlMain.Size = new System.Drawing.Size(1080, 676);
+            this.pnlMain.TabIndex = 1;
+            // 
+            // btnMinimize
+            // 
+            this.btnMinimize.Image = global::IS_Team1_Project.Properties.Resources.icons8_subtract_15;
+            this.btnMinimize.Location = new System.Drawing.Point(1100, 12);
+            this.btnMinimize.Name = "btnMinimize";
+            this.btnMinimize.Size = new System.Drawing.Size(15, 17);
+            this.btnMinimize.TabIndex = 18;
+            this.btnMinimize.TabStop = false;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Image = global::IS_Team1_Project.Properties.Resources.icons8_close_15;
+            this.btnClose.Location = new System.Drawing.Point(1130, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(15, 17);
+            this.btnClose.TabIndex = 17;
+            this.btnClose.TabStop = false;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // StudentMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,13 +317,13 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             this.pnlHome.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
 
         }

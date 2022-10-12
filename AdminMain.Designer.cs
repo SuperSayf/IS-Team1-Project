@@ -329,6 +329,7 @@
             // 
             // tmrSidebar
             // 
+            this.tmrSidebar.Interval = 10;
             this.tmrSidebar.Tick += new System.EventHandler(this.tmrSidebar_Tick);
             // 
             // pnlMain
