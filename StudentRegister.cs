@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,7 +21,7 @@ namespace IS_Team1_Project
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\\database.accdb";
+            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "database.accdb");
 
             // If all validations are passed, then register the student to the database
             if (TxtStudentNo_Validating(sender, new CancelEventArgs()) && TxtEmail_Validating(sender, new CancelEventArgs()) && TxtName_Validating(txtName, new CancelEventArgs()) && TxtSurname_Validating(txtSurname, new CancelEventArgs()) && TxtPassword_Validating(txtPassword, new CancelEventArgs()) && TxtConfirm_Validating(txtConfirmPassword, new CancelEventArgs()))
