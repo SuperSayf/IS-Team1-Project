@@ -38,7 +38,7 @@ namespace IS_Team1_Project
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "database.accdb");
-            //Sayf is cool
+            //Miguel go haha
             // If all validations are passed, then register the student to the database
             if (TxtStudentNo_Validating(sender, new CancelEventArgs()) && TxtEmail_Validating(sender, new CancelEventArgs()) && TxtName_Validating(txtName, new CancelEventArgs()) && TxtSurname_Validating(txtSurname, new CancelEventArgs()) && TxtPassword_Validating(txtPassword, new CancelEventArgs()) && TxtConfirm_Validating(txtConfirmPassword, new CancelEventArgs()))
             {
