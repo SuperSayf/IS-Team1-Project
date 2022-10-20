@@ -300,6 +300,8 @@
     <Content Include="database.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\eye-password.png" />
+    <None Include="Resources\eyeopen.png" />
     <Content Include="Resources\profileicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

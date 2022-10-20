@@ -89,6 +89,22 @@ namespace IS_Team1_Project
             }
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(txtboxPassword.PasswordChar == '*')
+            {
+                button2.BringToFront();
+                txtboxPassword.PasswordChar = '\0';
+            } 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(txtboxPassword.PasswordChar == '\0')
+            {
+                button1.BringToFront();
+                txtboxPassword.PasswordChar = '*';
+            }
+        }
     }
 }
