@@ -90,6 +90,11 @@
     <Compile Include="AdminQuries.Designer.cs">
       <DependentUpon>AdminQuries.cs</DependentUpon>
     </Compile>
+    <Compile Include="databaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>databaseDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +191,17 @@
     <EmbeddedResource Include="StudentRegister.resx">
       <DependentUpon>StudentRegister.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="databaseDataSet.xsc">
+      <DependentUpon>databaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="databaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>databaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="databaseDataSet.xss">
+      <DependentUpon>databaseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -249,7 +265,9 @@
     <None Include="Resources\icons8-close-15.png" />
     <None Include="Resources\icons8-subtract-15.png" />
     <None Include="Resources\icons8-back-15.png" />
-    <Content Include="database.accdb" />
+    <Content Include="database.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Resources\profileicon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
