@@ -16,21 +16,8 @@ namespace IS_Team1_Project
 {
     public partial class frmLogin : Form
     {
-        // Database Paths - Comment out everyone elses except yours
-
         //Sayf
-        public static String dbPath = @"C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\database.accdb";
-
-        // Mu'aaz
-        // public static String dbPath = @"";
-        // Muz
-        // public static String dbPath = @"";
-        // Miguel
-        // public static String dbPath = @"";
-        // Pratham
-        // public static String dbPath = @"";
-        // Daggy
-        // public static String dbPath = @"";
+        public static String dbPath = @"database.accdb";
 
         public static string StudentNum;
 
