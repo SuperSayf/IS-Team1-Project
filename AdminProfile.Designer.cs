@@ -120,7 +120,7 @@
             this.btnshow.Size = new System.Drawing.Size(28, 24);
             this.btnshow.TabIndex = 24;
             this.btnshow.UseVisualStyleBackColor = true;
-            this.btnshow.Click += new System.EventHandler(this.btnshow_Click_1);
+            
             // 
             // btnhide
             // 
@@ -134,7 +134,7 @@
             this.btnhide.Size = new System.Drawing.Size(28, 24);
             this.btnhide.TabIndex = 23;
             this.btnhide.UseVisualStyleBackColor = true;
-            this.btnhide.Click += new System.EventHandler(this.btnhide_Click_1);
+           
             // 
             // panel6
             // 
