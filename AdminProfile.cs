@@ -53,10 +53,7 @@ namespace IS_Team1_Project
 
       
 
-        private void AdminProfile_Load(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -87,6 +84,35 @@ namespace IS_Team1_Project
 
 
             }
+        }
+
+        
+
+       /*
+
+        private void btnshow_Click_1(object sender, EventArgs e)
+        {
+
+            if (txtboxPassword.PasswordChar == '*')
+            {
+                btnhide.BringToFront();
+                txtboxPassword.PasswordChar = '\0';
+            }
+        }
+
+        private void btnhide_Click_1(object sender, EventArgs e)
+        {
+            if (txtboxPassword.PasswordChar == '\0')
+            {
+                btnshow.BringToFront();
+                txtboxPassword.PasswordChar = '*';
+            }
+        }
+       */
+
+        private void AdminProfile_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
