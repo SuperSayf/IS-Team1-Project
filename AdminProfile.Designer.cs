@@ -120,7 +120,6 @@
             this.btnshow.Size = new System.Drawing.Size(28, 24);
             this.btnshow.TabIndex = 24;
             this.btnshow.UseVisualStyleBackColor = true;
-            
             // 
             // btnhide
             // 
@@ -134,7 +133,6 @@
             this.btnhide.Size = new System.Drawing.Size(28, 24);
             this.btnhide.TabIndex = 23;
             this.btnhide.UseVisualStyleBackColor = true;
-           
             // 
             // panel6
             // 
@@ -168,7 +166,6 @@
             this.txtboxPassword.ForeColor = System.Drawing.Color.White;
             this.txtboxPassword.Location = new System.Drawing.Point(125, 507);
             this.txtboxPassword.Name = "txtboxPassword";
-            this.txtboxPassword.PasswordChar = '*';
             this.txtboxPassword.Size = new System.Drawing.Size(320, 28);
             this.txtboxPassword.TabIndex = 19;
             this.txtboxPassword.Text = "Password";
