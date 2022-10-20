@@ -30,32 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label2 = new System.Windows.Forms.Label();
-            this.coursesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.databaseDataSet1 = new IS_Team1_Project.databaseDataSet();
-            this.studentsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.studentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.databaseDataSet = new IS_Team1_Project.databaseDataSet();
-            this.coursesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.coursesTableAdapter = new IS_Team1_Project.databaseDataSetTableAdapters.coursesTableAdapter();
-            this.studentsTableAdapter = new IS_Team1_Project.databaseDataSetTableAdapters.studentsTableAdapter();
-            this.studentsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.adminTableAdapter = new IS_Team1_Project.databaseDataSetTableAdapters.adminTableAdapter();
-            this.adminnumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adminemailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adminnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adminsurnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adminpasswordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.coursesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coursesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource2)).BeginInit();
+            this.courses_availTableAdapter = new IS_Team1_Project.databaseDataSet1TableAdapters.courses_availTableAdapter();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.coursesavailBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet2 = new IS_Team1_Project.databaseDataSet2();
+            this.coursesavailBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.courses_availTableAdapter1 = new IS_Team1_Project.databaseDataSet2TableAdapters.courses_availTableAdapter();
+            this.moduleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecturer_email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lecturer_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblModule = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coursesavailBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coursesavailBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -70,49 +66,6 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Courses";
             // 
-            // coursesBindingSource1
-            // 
-            this.coursesBindingSource1.DataMember = "courses";
-            this.coursesBindingSource1.DataSource = this.databaseDataSet1;
-            // 
-            // databaseDataSet1
-            // 
-            this.databaseDataSet1.DataSetName = "databaseDataSet";
-            this.databaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // studentsBindingSource1
-            // 
-            this.studentsBindingSource1.DataMember = "students";
-            this.studentsBindingSource1.DataSource = this.databaseDataSet1;
-            // 
-            // studentsBindingSource
-            // 
-            this.studentsBindingSource.DataMember = "students";
-            this.studentsBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // databaseDataSet
-            // 
-            this.databaseDataSet.DataSetName = "databaseDataSet";
-            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // coursesBindingSource
-            // 
-            this.coursesBindingSource.DataMember = "courses";
-            this.coursesBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // coursesTableAdapter
-            // 
-            this.coursesTableAdapter.ClearBeforeFill = true;
-            // 
-            // studentsTableAdapter
-            // 
-            this.studentsTableAdapter.ClearBeforeFill = true;
-            // 
-            // studentsBindingSource2
-            // 
-            this.studentsBindingSource2.DataMember = "students";
-            this.studentsBindingSource2.DataSource = this.databaseDataSet1;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -120,73 +73,157 @@
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.adminnumDataGridViewTextBoxColumn,
-            this.adminemailDataGridViewTextBoxColumn,
-            this.adminnameDataGridViewTextBoxColumn,
-            this.adminsurnameDataGridViewTextBoxColumn,
-            this.adminpasswordDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.adminBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(187, 153);
+            this.moduleDataGridViewTextBoxColumn,
+            this.lecturer_email,
+            this.lecturer_number});
+            this.dataGridView1.DataSource = this.coursesavailBindingSource2;
+            this.dataGridView1.Location = new System.Drawing.Point(182, 124);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(675, 382);
             this.dataGridView1.TabIndex = 5;
             // 
-            // adminBindingSource
+            // courses_availTableAdapter
             // 
-            this.adminBindingSource.DataMember = "admin";
-            this.adminBindingSource.DataSource = this.databaseDataSet1;
+            this.courses_availTableAdapter.ClearBeforeFill = true;
             // 
-            // adminTableAdapter
+            // textBox1
             // 
-            this.adminTableAdapter.ClearBeforeFill = true;
+            this.textBox1.Location = new System.Drawing.Point(895, 157);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(179, 22);
+            this.textBox1.TabIndex = 6;
             // 
-            // adminnumDataGridViewTextBoxColumn
+            // textBox2
             // 
-            this.adminnumDataGridViewTextBoxColumn.DataPropertyName = "admin_num";
-            this.adminnumDataGridViewTextBoxColumn.HeaderText = "admin_num";
-            this.adminnumDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.adminnumDataGridViewTextBoxColumn.Name = "adminnumDataGridViewTextBoxColumn";
-            this.adminnumDataGridViewTextBoxColumn.ReadOnly = true;
-            this.adminnumDataGridViewTextBoxColumn.Width = 125;
+            this.textBox2.Location = new System.Drawing.Point(895, 231);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(179, 22);
+            this.textBox2.TabIndex = 7;
             // 
-            // adminemailDataGridViewTextBoxColumn
+            // databaseDataSet2
             // 
-            this.adminemailDataGridViewTextBoxColumn.DataPropertyName = "admin_email";
-            this.adminemailDataGridViewTextBoxColumn.HeaderText = "admin_email";
-            this.adminemailDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.adminemailDataGridViewTextBoxColumn.Name = "adminemailDataGridViewTextBoxColumn";
-            this.adminemailDataGridViewTextBoxColumn.ReadOnly = true;
-            this.adminemailDataGridViewTextBoxColumn.Width = 125;
+            this.databaseDataSet2.DataSetName = "databaseDataSet2";
+            this.databaseDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // adminnameDataGridViewTextBoxColumn
+            // coursesavailBindingSource2
             // 
-            this.adminnameDataGridViewTextBoxColumn.DataPropertyName = "admin_name";
-            this.adminnameDataGridViewTextBoxColumn.HeaderText = "admin_name";
-            this.adminnameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.adminnameDataGridViewTextBoxColumn.Name = "adminnameDataGridViewTextBoxColumn";
-            this.adminnameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.adminnameDataGridViewTextBoxColumn.Width = 125;
+            this.coursesavailBindingSource2.DataMember = "courses_avail";
+            this.coursesavailBindingSource2.DataSource = this.databaseDataSet2;
             // 
-            // adminsurnameDataGridViewTextBoxColumn
+            // courses_availTableAdapter1
             // 
-            this.adminsurnameDataGridViewTextBoxColumn.DataPropertyName = "admin_surname";
-            this.adminsurnameDataGridViewTextBoxColumn.HeaderText = "admin_surname";
-            this.adminsurnameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.adminsurnameDataGridViewTextBoxColumn.Name = "adminsurnameDataGridViewTextBoxColumn";
-            this.adminsurnameDataGridViewTextBoxColumn.ReadOnly = true;
-            this.adminsurnameDataGridViewTextBoxColumn.Width = 125;
+            this.courses_availTableAdapter1.ClearBeforeFill = true;
             // 
-            // adminpasswordDataGridViewTextBoxColumn
+            // moduleDataGridViewTextBoxColumn
             // 
-            this.adminpasswordDataGridViewTextBoxColumn.DataPropertyName = "admin_password";
-            this.adminpasswordDataGridViewTextBoxColumn.HeaderText = "admin_password";
-            this.adminpasswordDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.adminpasswordDataGridViewTextBoxColumn.Name = "adminpasswordDataGridViewTextBoxColumn";
-            this.adminpasswordDataGridViewTextBoxColumn.ReadOnly = true;
-            this.adminpasswordDataGridViewTextBoxColumn.Width = 125;
+            this.moduleDataGridViewTextBoxColumn.DataPropertyName = "module";
+            this.moduleDataGridViewTextBoxColumn.HeaderText = "module";
+            this.moduleDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.moduleDataGridViewTextBoxColumn.Name = "moduleDataGridViewTextBoxColumn";
+            this.moduleDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // lecturer_email
+            // 
+            this.lecturer_email.DataPropertyName = "lecturer_email";
+            this.lecturer_email.HeaderText = "lecturer_email";
+            this.lecturer_email.MinimumWidth = 6;
+            this.lecturer_email.Name = "lecturer_email";
+            this.lecturer_email.ReadOnly = true;
+            this.lecturer_email.Width = 200;
+            // 
+            // lecturer_number
+            // 
+            this.lecturer_number.DataPropertyName = "lecturer_number";
+            this.lecturer_number.HeaderText = "lecturer_number";
+            this.lecturer_number.MinimumWidth = 6;
+            this.lecturer_number.Name = "lecturer_number";
+            this.lecturer_number.ReadOnly = true;
+            this.lecturer_number.Width = 125;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(895, 310);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(179, 22);
+            this.textBox3.TabIndex = 9;
+            // 
+            // lblModule
+            // 
+            this.lblModule.AutoSize = true;
+            this.lblModule.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.lblModule.ForeColor = System.Drawing.Color.White;
+            this.lblModule.Location = new System.Drawing.Point(895, 122);
+            this.lblModule.Name = "lblModule";
+            this.lblModule.Size = new System.Drawing.Size(81, 23);
+            this.lblModule.TabIndex = 10;
+            this.lblModule.Text = "Module";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(895, 194);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 23);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Lecturer Email";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(895, 275);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(179, 23);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Lecturer Number";
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(915, 356);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(133, 38);
+            this.btnUpdate.TabIndex = 13;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(915, 414);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(133, 38);
+            this.btnAdd.TabIndex = 14;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = false;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(915, 468);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(133, 38);
+            this.btnDelete.TabIndex = 15;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
             // AdminCourses
             // 
@@ -194,6 +231,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(1440, 832);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblModule);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -202,15 +248,10 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminCourses";
             this.Load += new System.EventHandler(this.AdminCourses_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.coursesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coursesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.studentsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coursesavailBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coursesavailBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,22 +260,23 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private databaseDataSet databaseDataSet;
-        private System.Windows.Forms.BindingSource coursesBindingSource;
-        private databaseDataSetTableAdapters.coursesTableAdapter coursesTableAdapter;
-        private System.Windows.Forms.BindingSource studentsBindingSource;
-        private databaseDataSetTableAdapters.studentsTableAdapter studentsTableAdapter;
-        private databaseDataSet databaseDataSet1;
-        private System.Windows.Forms.BindingSource studentsBindingSource1;
-        private System.Windows.Forms.BindingSource studentsBindingSource2;
-        private System.Windows.Forms.BindingSource coursesBindingSource1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource adminBindingSource;
-        private databaseDataSetTableAdapters.adminTableAdapter adminTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adminnumDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adminemailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adminnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adminsurnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adminpasswordDataGridViewTextBoxColumn;
+        private databaseDataSet1TableAdapters.courses_availTableAdapter courses_availTableAdapter;
+        private System.Windows.Forms.BindingSource coursesavailBindingSource1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private databaseDataSet2 databaseDataSet2;
+        private System.Windows.Forms.BindingSource coursesavailBindingSource2;
+        private databaseDataSet2TableAdapters.courses_availTableAdapter courses_availTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn moduleDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecturer_email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lecturer_number;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label lblModule;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnDelete;
     }
 }
