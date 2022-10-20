@@ -77,6 +77,7 @@ namespace IS_Team1_Project
                 e.Cancel = true;
                 txtStudentNum.Focus();
                 errorProvider2.SetError(txtStudentNum, "Enter Student Number");
+                
                 return false;
             }
             else

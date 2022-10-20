@@ -32,7 +32,7 @@
             this.txtboxFirstName = new System.Windows.Forms.TextBox();
             this.txtBoxLastName = new System.Windows.Forms.TextBox();
             this.txtboxAdminNo = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtboxEmail = new System.Windows.Forms.TextBox();
             this.txtboxPassword = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -53,7 +53,6 @@
             this.label2.Size = new System.Drawing.Size(133, 42);
             this.label2.TabIndex = 4;
             this.label2.Text = "Profile";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txtboxFirstName
             // 
@@ -98,19 +97,19 @@
             this.txtboxAdminNo.Text = "Admin Number";
             this.txtboxAdminNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtEmail
+            // txtboxEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(103)))));
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Dubai Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.ForeColor = System.Drawing.Color.White;
-            this.txtEmail.Location = new System.Drawing.Point(40, 458);
-            this.txtEmail.Multiline = true;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(456, 58);
-            this.txtEmail.TabIndex = 3;
-            this.txtEmail.Text = "Email Address";
-            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtboxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(46)))), ((int)(((byte)(103)))));
+            this.txtboxEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtboxEmail.Font = new System.Drawing.Font("Dubai Medium", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxEmail.ForeColor = System.Drawing.Color.White;
+            this.txtboxEmail.Location = new System.Drawing.Point(40, 458);
+            this.txtboxEmail.Multiline = true;
+            this.txtboxEmail.Name = "txtboxEmail";
+            this.txtboxEmail.Size = new System.Drawing.Size(456, 58);
+            this.txtboxEmail.TabIndex = 3;
+            this.txtboxEmail.Text = "Email Address";
+            this.txtboxEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtboxPassword
             // 
@@ -138,7 +137,7 @@
             this.btnClear.TabIndex = 7;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = false;
-            this.btnClear.Click += new System.EventHandler(this.button1_Click);
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnUpdate
             // 
@@ -152,12 +151,13 @@
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.txtboxPassword);
             this.panel1.Controls.Add(this.txtboxFirstName);
-            this.panel1.Controls.Add(this.txtEmail);
+            this.panel1.Controls.Add(this.txtboxEmail);
             this.panel1.Controls.Add(this.txtBoxLastName);
             this.panel1.Controls.Add(this.txtboxAdminNo);
             this.panel1.Location = new System.Drawing.Point(560, 216);
@@ -206,7 +206,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtboxFirstName;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtboxEmail;
         private System.Windows.Forms.TextBox txtboxAdminNo;
         private System.Windows.Forms.TextBox txtBoxLastName;
         private System.Windows.Forms.TextBox txtboxPassword;
