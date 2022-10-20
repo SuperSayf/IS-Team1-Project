@@ -32,8 +32,8 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnshow = new System.Windows.Forms.Button();
+            this.btnhide = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -91,8 +91,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnshow);
+            this.panel1.Controls.Add(this.btnhide);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
@@ -108,30 +108,33 @@
             this.panel1.Size = new System.Drawing.Size(546, 720);
             this.panel1.TabIndex = 9;
             // 
-            // button2
+            // btnshow
             // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Transparent;
-            this.button2.Image = global::IS_Team1_Project.Properties.Resources.eyeopen;
-            this.button2.Location = new System.Drawing.Point(449, 507);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(55, 36);
-            this.button2.TabIndex = 24;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnshow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnshow.FlatAppearance.BorderSize = 0;
+            this.btnshow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnshow.ForeColor = System.Drawing.Color.Transparent;
+            this.btnshow.Image = global::IS_Team1_Project.Properties.Resources.eyeopen;
+            this.btnshow.Location = new System.Drawing.Point(417, 512);
+            this.btnshow.Name = "btnshow";
+            this.btnshow.Size = new System.Drawing.Size(28, 24);
+            this.btnshow.TabIndex = 24;
+            this.btnshow.UseVisualStyleBackColor = true;
+            this.btnshow.Click += new System.EventHandler(this.btnshow_Click_1);
             // 
-            // button1
+            // btnhide
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Image = global::IS_Team1_Project.Properties.Resources.eye_password1;
-            this.button1.Location = new System.Drawing.Point(449, 507);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(55, 36);
-            this.button1.TabIndex = 23;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnhide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnhide.FlatAppearance.BorderSize = 0;
+            this.btnhide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhide.ForeColor = System.Drawing.Color.Transparent;
+            this.btnhide.Image = global::IS_Team1_Project.Properties.Resources.eye_password;
+            this.btnhide.Location = new System.Drawing.Point(417, 511);
+            this.btnhide.Name = "btnhide";
+            this.btnhide.Size = new System.Drawing.Size(28, 24);
+            this.btnhide.TabIndex = 23;
+            this.btnhide.UseVisualStyleBackColor = true;
+            this.btnhide.Click += new System.EventHandler(this.btnhide_Click_1);
             // 
             // panel6
             // 
@@ -242,7 +245,8 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Location = new System.Drawing.Point(785, 90);
+            this.pictureBox1.Image = global::IS_Team1_Project.Properties.Resources.Profileicon;
+            this.pictureBox1.Location = new System.Drawing.Point(791, 80);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(94, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -291,7 +295,7 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnshow;
+        private System.Windows.Forms.Button btnhide;
     }
 }
