@@ -37,8 +37,6 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnAddadmin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -167,33 +165,6 @@
             this.panel1.Size = new System.Drawing.Size(546, 720);
             this.panel1.TabIndex = 9;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1153, 155);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 26);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Add admin";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // btnAddadmin
-            // 
-            this.btnAddadmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
-            this.btnAddadmin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAddadmin.FlatAppearance.BorderSize = 0;
-            this.btnAddadmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddadmin.Image = global::IS_Team1_Project.Properties.Resources.Addadminicon;
-            this.btnAddadmin.Location = new System.Drawing.Point(1158, 61);
-            this.btnAddadmin.Name = "btnAddadmin";
-            this.btnAddadmin.Size = new System.Drawing.Size(94, 91);
-            this.btnAddadmin.TabIndex = 12;
-            this.btnAddadmin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnAddadmin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnAddadmin.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -211,8 +182,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(1620, 1040);
-            this.Controls.Add(this.btnAddadmin);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnClear);
@@ -244,7 +213,5 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAddadmin;
     }
 }
