@@ -46,7 +46,7 @@
             this.btnProfile = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.tmrSidebar = new System.Windows.Forms.Timer(this.components);
-            this.pnlMain = new System.Windows.Forms.Panel();
+            pnlMain = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.sidebar.SuspendLayout();
@@ -271,11 +271,11 @@
             // 
             // pnlMain
             // 
-            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMain.Location = new System.Drawing.Point(77, 0);
-            this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1080, 676);
-            this.pnlMain.TabIndex = 1;
+            pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            pnlMain.Location = new System.Drawing.Point(77, 0);
+            pnlMain.Name = "pnlMain";
+            pnlMain.Size = new System.Drawing.Size(1080, 676);
+            pnlMain.TabIndex = 1;
             // 
             // btnMinimize
             // 
@@ -305,7 +305,7 @@
             this.ClientSize = new System.Drawing.Size(1157, 676);
             this.Controls.Add(this.btnMinimize);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.pnlMain);
+            this.Controls.Add(pnlMain);
             this.Controls.Add(this.sidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StudentMain";
@@ -337,7 +337,7 @@
         private System.Windows.Forms.PictureBox btnMenu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer tmrSidebar;
-        private System.Windows.Forms.Panel pnlMain;
+        private static System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.Panel panel3;

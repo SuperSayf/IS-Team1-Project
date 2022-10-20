@@ -45,3 +45,5 @@ C:\Users\sakhi\Desktop\Coding\IS\IS-Team1-Project\obj\Debug\IS-Team1-Project.csp
 C:\Users\sakhi\Desktop\Coding\IS\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.CoreCompileInputs.cache
 C:\Users\sakhi\Desktop\Coding\IS\IS-Team1-Project\obj\Debug\IS-Team1-Project.exe
 C:\Users\sakhi\Desktop\Coding\IS\IS-Team1-Project\obj\Debug\IS-Team1-Project.pdb
+C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentQuizManager.resources
+C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentQuizView.resources

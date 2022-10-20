@@ -33,18 +33,18 @@ namespace IS_Team1_Project
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
 
-        public void loadform(object form)
+        public static void loadform(object form)
         {
-            if (this.pnlMain.Controls.Count > 0)
+            if (pnlMain.Controls.Count > 0)
             {
-                this.pnlMain.Controls.RemoveAt(0);
+                pnlMain.Controls.RemoveAt(0);
             }
 
             Form fh = form as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
-            this.pnlMain.Controls.Add(fh);
-            this.pnlMain.Tag = fh;
+            pnlMain.Controls.Add(fh);
+            pnlMain.Tag = fh;
             fh.Show();
         }
 

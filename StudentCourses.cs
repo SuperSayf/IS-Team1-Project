@@ -14,6 +14,10 @@ namespace IS_Team1_Project
 {
     public partial class StudentCourses : Form
     {
+        private static String course1 = "";
+        private static String course2 = "";
+        public static String selectedCourse = "";
+
         public StudentCourses()
         {
             InitializeComponent();
@@ -21,7 +25,7 @@ namespace IS_Team1_Project
 
         private void StudentCourses_Load(object sender, EventArgs e)
         {
-            bool bEnrolled = false;
+            bool bEnrolled = true;
             string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "database.accdb");
             using (OleDbConnection connection = new OleDbConnection(connectionstring))
             {
@@ -33,16 +37,49 @@ namespace IS_Team1_Project
                 if (reader.Read())
                 {
                     // If enrolled is false
-                    lblSelectCourses.Visible = true;
-                    cboCourse1.Visible = true;
-                    cboCourse2.Visible = true;
-                    btnConfirmCourse.Visible = true;
-                }
-                else
-                {
-                    // If enrolled is true
-                    pnl1.Visible = true;
-                    pnl2.Visible = true;
+                    bEnrolled = reader["course_enrolled"] as bool? ?? false;
+
+                    if (bEnrolled)
+                    {
+                        // If enrolled is true
+                        lblHeader.Visible = true;
+                        pnl1.Visible = true;
+                        pnl2.Visible = true;
+
+                        // Set the text on the panels to the course name
+                        course1 = reader["course_1"].ToString();
+                        course2 = reader["course_2"].ToString();
+
+                        lblCourseName1.Text = course1;
+                        lblCourseName2.Text = course2;
+
+                        // SQL to count how many students in the table have the same course
+                        OleDbCommand command2 = new OleDbCommand("SELECT COUNT(*) FROM courses WHERE course_1 = @course_1", connection);
+                        command2.Parameters.AddWithValue("@course_1", course1);
+                        OleDbDataReader reader2 = command2.ExecuteReader();
+                        if (reader2.Read())
+                        {
+                            // Set the text on the panels to the number of students in the course
+                            int course1Count = reader2.GetInt32(0) - 1;
+                            lblC1Students.Text = course1Count.ToString() + " other student(s) in your class";
+                        }
+
+                        OleDbCommand command3 = new OleDbCommand("SELECT COUNT(*) FROM courses WHERE course_2 = @course_2", connection);
+                        command3.Parameters.AddWithValue("@course_2", course2);
+                        OleDbDataReader reader3 = command3.ExecuteReader();
+                        if (reader3.Read())
+                        {
+                            int course2Count = reader3.GetInt32(0) - 1;
+                            lblC2Students.Text = course2Count.ToString() + " other student(s) in your class";
+                        }
+                    }
+                    else
+                    {
+                        lblSelectCourses.Visible = true;
+                        cboCourse1.Visible = true;
+                        cboCourse2.Visible = true;
+                        btnConfirmCourse.Visible = true;
+                    }
                 }
                 connection.Close();
             }
@@ -61,7 +98,7 @@ namespace IS_Team1_Project
             {
                 MessageBox.Show("You can't select the same course twice");
             }
-            else if (Course1 =="" || Course2=="")
+            else if (Course1 == "" || Course2 == "")
             {
                 MessageBox.Show("You have to select a course");
             }
@@ -83,10 +120,20 @@ namespace IS_Team1_Project
                     command.Parameters.AddWithValue("@student_num", frmLogin.StudentNum);
                     command.ExecuteNonQuery();
                     connection.Close();
-
                 }
-
             }
+        }
+
+        private void pnl1_Click(object sender, EventArgs e)
+        {
+            selectedCourse = course1;
+            StudentMain.loadform(new StudentQuizManager());
+        }
+
+        private void pnl2_Click(object sender, EventArgs e)
+        {
+            selectedCourse = course2;
+            StudentMain.loadform(new StudentQuizManager());
         }
     }
 }
