@@ -18,42 +18,30 @@ namespace IS_Team1_Project
         {
             InitializeComponent();
 
-            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "database.accdb");
+            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath;
 
             using (OleDbConnection connection = new OleDbConnection(connectionstring))
             {
-                
                 connection.Open();
-                OleDbCommand command = new OleDbCommand("SELECT * FROM admin WHERE admin_num = @admin_num" , connection);
-                command.Parameters.AddWithValue("@admin_num", LoginAdmin.AdminNum);  
+                OleDbCommand command = new OleDbCommand("SELECT * FROM admin WHERE admin_num = @admin_num", connection);
+                command.Parameters.AddWithValue("@admin_num", LoginAdmin.AdminNum);
                 // We basically read from the databse and set the textboxes text to their respective text
                 OleDbDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
                     txtboxAdminNo.Text = reader["admin_num"].ToString();
-                    txtboxEmail.Text  = reader["admin_email"].ToString();
+                    txtboxEmail.Text = reader["admin_email"].ToString();
                     txtboxFirstName.Text = reader["admin_name"].ToString();
                     txtBoxLastName.Text = reader["admin_surname"].ToString();
-                    txtboxPassword.Text  = reader["admin_password"].ToString();
-
-                }    
+                    txtboxPassword.Text = reader["admin_password"].ToString();
+                }
                 connection.Close();
-
             }
-
-                
         }
-
-      
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
-
-      
-
-      
 
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -66,7 +54,7 @@ namespace IS_Team1_Project
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "database.accdb");
+            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath;
 
             using (OleDbConnection connection = new OleDbConnection(connectionstring))
             {
@@ -79,40 +67,34 @@ namespace IS_Team1_Project
                 command.Parameters.AddWithValue("@admin_password", txtboxPassword.Text);
                 command.ExecuteNonQuery();
                 connection.Close();
-                
+
                 MessageBox.Show("Profile updated");
-
-
             }
         }
 
-        
+        /*
 
-       /*
+         private void btnshow_Click_1(object sender, EventArgs e)
+         {
+             if (txtboxPassword.PasswordChar == '*')
+             {
+                 btnhide.BringToFront();
+                 txtboxPassword.PasswordChar = '\0';
+             }
+         }
 
-        private void btnshow_Click_1(object sender, EventArgs e)
-        {
-
-            if (txtboxPassword.PasswordChar == '*')
-            {
-                btnhide.BringToFront();
-                txtboxPassword.PasswordChar = '\0';
-            }
-        }
-
-        private void btnhide_Click_1(object sender, EventArgs e)
-        {
-            if (txtboxPassword.PasswordChar == '\0')
-            {
-                btnshow.BringToFront();
-                txtboxPassword.PasswordChar = '*';
-            }
-        }
-       */
+         private void btnhide_Click_1(object sender, EventArgs e)
+         {
+             if (txtboxPassword.PasswordChar == '\0')
+             {
+                 btnshow.BringToFront();
+                 txtboxPassword.PasswordChar = '*';
+             }
+         }
+        */
 
         private void AdminProfile_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

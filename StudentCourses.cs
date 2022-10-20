@@ -26,7 +26,7 @@ namespace IS_Team1_Project
         private void StudentCourses_Load(object sender, EventArgs e)
         {
             bool bEnrolled = true;
-            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "database.accdb");
+            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath;
             using (OleDbConnection connection = new OleDbConnection(connectionstring))
             {
                 connection.Open();
@@ -87,7 +87,7 @@ namespace IS_Team1_Project
 
         private void btnConfirmCourse_Click(object sender, EventArgs e)
         {
-            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "database.accdb");
+            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath;
 
             string Course1, Course2;
             Course1 = cboCourse1.Text;

@@ -17,6 +17,7 @@ namespace IS_Team1_Project
 
     {
         public static string AdminNum;
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
        (
@@ -34,12 +35,10 @@ namespace IS_Team1_Project
             this.FormBorderStyle = FormBorderStyle.None;
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
         }
-        
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
-            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "database.accdb");
+            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath;
 
             if (TxtStudentNum_Validating(sender, new CancelEventArgs()) && TxtPassword_Validating(sender, new CancelEventArgs()))
             {
@@ -66,11 +65,7 @@ namespace IS_Team1_Project
                     connection.Close();
                 }
             }
-
-
-            
         }
-
 
         private bool TxtStudentNum_Validating(object sender, CancelEventArgs e)
         {
@@ -78,7 +73,7 @@ namespace IS_Team1_Project
             {
                 e.Cancel = true;
                 txtAdminNum.Focus();
-                
+
                 errorProvider2.SetError(txtAdminNum, "Enter Admin Number");
                 return false;
             }
@@ -90,15 +85,13 @@ namespace IS_Team1_Project
             }
         }
 
-       
-
         private bool TxtPassword_Validating(object sender, CancelEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtAdminPassword.Text))
             {
                 e.Cancel = true;
                 txtAdminPassword.Focus();
-                
+
                 errorProvider2.SetError(txtAdminPassword, "Enter password");
                 return false;
             }

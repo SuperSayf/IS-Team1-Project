@@ -16,7 +16,24 @@ namespace IS_Team1_Project
 {
     public partial class frmLogin : Form
     {
+        // Database Paths - Comment out everyone elses except yours
+
+        //Sayf
+        public static String dbPath = @"C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\database.accdb";
+
+        // Mu'aaz
+        // public static String dbPath = @"";
+        // Muz
+        // public static String dbPath = @"";
+        // Miguel
+        // public static String dbPath = @"";
+        // Pratham
+        // public static String dbPath = @"";
+        // Daggy
+        // public static String dbPath = @"";
+
         public static string StudentNum;
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
        (
@@ -41,7 +58,7 @@ namespace IS_Team1_Project
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "database.accdb");
+            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + dbPath;
 
             if (TxtStudentNum_Validating(sender, new CancelEventArgs()) && TxtPassword_Validating(sender, new CancelEventArgs()))
             {
@@ -77,7 +94,7 @@ namespace IS_Team1_Project
                 e.Cancel = true;
                 txtStudentNum.Focus();
                 errorProvider2.SetError(txtStudentNum, "Enter Student Number");
-                
+
                 return false;
             }
             else
