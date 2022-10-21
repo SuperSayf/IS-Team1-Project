@@ -24,7 +24,7 @@ namespace IS_Team1_Project
         // Mu'aaz
         // public static String dbPath = @"";
         // Muz
-        // public static String dbPath = @"";
+        // public static String dbPath = @""C:\Users\sakhi\Desktop\Coding\IS\IS-Team1-Project\database.accdb"";
         // Miguel
         // public static String dbPath = @"";
         // Pratham

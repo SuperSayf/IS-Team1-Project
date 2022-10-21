@@ -15,8 +15,11 @@ namespace IS_Team1_Project
 {
     public partial class LoginAdmin : Form
 
+
     {
         public static string AdminNum;
+        //Muz db Path 
+        public static String dbPath = @"C:\Users\sakhi\Desktop\Coding\IS\IS-Team1-Project\database.accdb";
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -38,7 +41,7 @@ namespace IS_Team1_Project
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath;
+            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + dbPath;
 
             if (TxtStudentNum_Validating(sender, new CancelEventArgs()) && TxtPassword_Validating(sender, new CancelEventArgs()))
             {
