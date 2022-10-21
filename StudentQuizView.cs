@@ -194,8 +194,9 @@ namespace IS_Team1_Project
             {
                 connection.Open();
                 // SQL to insert into the quiz table the student's number, quiz_difficulty, quiz_score, and quiz_pass
-                OleDbCommand command = new OleDbCommand("INSERT INTO quiz (student_num, quiz_difficulty, quiz_pass, quiz_score) VALUES (@student_num, @quiz_difficulty, @quiz_pass, @quiz_score)", connection);
+                OleDbCommand command = new OleDbCommand("INSERT INTO quiz (student_num, quiz_course, quiz_difficulty, quiz_pass, quiz_score) VALUES (@student_num, @quiz_course, @quiz_difficulty, @quiz_pass, @quiz_score)", connection);
                 command.Parameters.AddWithValue("@student_num", frmLogin.StudentNum);
+                command.Parameters.AddWithValue("@quiz_course", StudentCourses.selectedCourse);
                 command.Parameters.AddWithValue("@quiz_difficulty", StudentQuizManager.quizDifficulty);
                 command.Parameters.AddWithValue("@quiz_pass", isPassed);
                 command.Parameters.AddWithValue("@quiz_score", score);
