@@ -39,7 +39,7 @@ namespace IS_Team1_Project
 
         private void btnHard_Click(object sender, EventArgs e)
         {
-            quizDifficulty = "Difficult";
+            quizDifficulty = "Hard";
             StudentMain.loadform(new StudentQuizView());
         }
     }

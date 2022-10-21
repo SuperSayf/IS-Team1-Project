@@ -34,9 +34,11 @@
             this.radTrue = new System.Windows.Forms.RadioButton();
             this.radFalse = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtStudentNum = new System.Windows.Forms.TextBox();
+            this.txtAnswer = new System.Windows.Forms.TextBox();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrev = new System.Windows.Forms.Button();
+            this.lblQuestNum = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCourseName
@@ -71,7 +73,7 @@
             this.lblQuestion.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblQuestion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.White;
-            this.lblQuestion.Location = new System.Drawing.Point(456, 239);
+            this.lblQuestion.Location = new System.Drawing.Point(199, 231);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(123, 18);
             this.lblQuestion.TabIndex = 21;
@@ -89,6 +91,7 @@
             this.radTrue.TabStop = true;
             this.radTrue.Text = "True";
             this.radTrue.UseVisualStyleBackColor = true;
+            this.radTrue.Visible = false;
             // 
             // radFalse
             // 
@@ -102,6 +105,7 @@
             this.radFalse.TabStop = true;
             this.radFalse.Text = "False";
             this.radFalse.UseVisualStyleBackColor = true;
+            this.radFalse.Visible = false;
             // 
             // panel1
             // 
@@ -111,33 +115,59 @@
             this.panel1.Size = new System.Drawing.Size(622, 1);
             this.panel1.TabIndex = 25;
             // 
-            // txtStudentNum
+            // txtAnswer
             // 
-            this.txtStudentNum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
-            this.txtStudentNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtStudentNum.ForeColor = System.Drawing.Color.White;
-            this.txtStudentNum.Location = new System.Drawing.Point(202, 395);
-            this.txtStudentNum.Name = "txtStudentNum";
-            this.txtStudentNum.Size = new System.Drawing.Size(622, 13);
-            this.txtStudentNum.TabIndex = 24;
+            this.txtAnswer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
+            this.txtAnswer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtAnswer.ForeColor = System.Drawing.Color.White;
+            this.txtAnswer.Location = new System.Drawing.Point(202, 395);
+            this.txtAnswer.Name = "txtAnswer";
+            this.txtAnswer.Size = new System.Drawing.Size(622, 13);
+            this.txtAnswer.TabIndex = 24;
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(944, 594);
+            this.btnNext.Location = new System.Drawing.Point(797, 594);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(27, 23);
             this.btnNext.TabIndex = 26;
             this.btnNext.Text = ">";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPrev
             // 
-            this.btnPrev.Location = new System.Drawing.Point(100, 594);
+            this.btnPrev.Location = new System.Drawing.Point(202, 594);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(27, 23);
             this.btnPrev.TabIndex = 27;
             this.btnPrev.Text = "<";
             this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.Visible = false;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
+            // 
+            // lblQuestNum
+            // 
+            this.lblQuestNum.AutoSize = true;
+            this.lblQuestNum.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblQuestNum.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestNum.ForeColor = System.Drawing.Color.White;
+            this.lblQuestNum.Location = new System.Drawing.Point(500, 594);
+            this.lblQuestNum.Name = "lblQuestNum";
+            this.lblQuestNum.Size = new System.Drawing.Size(32, 18);
+            this.lblQuestNum.TabIndex = 28;
+            this.lblQuestNum.Text = "0/0";
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(474, 615);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 29;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Visible = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // StudentQuizView
             // 
@@ -145,10 +175,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(1080, 676);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.lblQuestNum);
             this.Controls.Add(this.btnPrev);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.txtStudentNum);
+            this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.radFalse);
             this.Controls.Add(this.radTrue);
             this.Controls.Add(this.lblQuestion);
@@ -172,8 +204,10 @@
         private System.Windows.Forms.RadioButton radTrue;
         private System.Windows.Forms.RadioButton radFalse;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtStudentNum;
+        private System.Windows.Forms.TextBox txtAnswer;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnPrev;
+        private System.Windows.Forms.Label lblQuestNum;
+        private System.Windows.Forms.Button btnSubmit;
     }
 }
