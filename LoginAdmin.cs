@@ -15,8 +15,10 @@ namespace IS_Team1_Project
 {
     public partial class LoginAdmin : Form
 
+
     {
         public static string AdminNum;
+        
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
