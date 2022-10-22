@@ -113,5 +113,12 @@ namespace IS_Team1_Project
             refreshGrid();
             MessageBox.Show("1 record updated");
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtModule.Clear();
+            txtLecturerEmail.Clear();
+            txtLecturerNumber.Clear();
+        }
     }
 }
