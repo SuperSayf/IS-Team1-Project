@@ -15,6 +15,7 @@ namespace IS_Team1_Project
     public partial class AdminProfile : Form
 
     {
+       
         
         public AdminProfile()
         {

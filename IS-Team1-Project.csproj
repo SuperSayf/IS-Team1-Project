@@ -105,11 +105,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>databaseDataSet2.xsd</DependentUpon>
     </Compile>
-    <Compile Include="databaseDataSet31.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>databaseDataSet31.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,17 +251,6 @@
     </None>
     <None Include="databaseDataSet2.xss">
       <DependentUpon>databaseDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="databaseDataSet31.xsc">
-      <DependentUpon>databaseDataSet31.xsd</DependentUpon>
-    </None>
-    <None Include="databaseDataSet31.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>databaseDataSet31.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="databaseDataSet31.xss">
-      <DependentUpon>databaseDataSet31.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
