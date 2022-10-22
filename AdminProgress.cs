@@ -16,12 +16,5 @@ namespace IS_Team1_Project
         {
             InitializeComponent();
         }
-
-        private void AdminProgress_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'databaseDataSet3.quiz' table. You can move, or remove it, as needed.
-            this.quizTableAdapter.Fill(this.databaseDataSet3.quiz);
-
-        }
     }
 }
