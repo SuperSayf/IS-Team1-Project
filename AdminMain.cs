@@ -97,7 +97,7 @@ namespace IS_Team1_Project
 
         private void btnAcademic_Click(object sender, EventArgs e)
         {
-            loadform(new AdminAcademic());
+            loadform(new PrathamFlopIS());
         }
 
         private void btnProfile_Click(object sender, EventArgs e)
