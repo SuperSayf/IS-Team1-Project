@@ -15,14 +15,15 @@ namespace IS_Team1_Project
     public partial class AdminProfile : Form
 
     {
-        
+        //Muz db Path
+        public static String dbPath = @"C:\Users\sakhi\Desktop\Coding\IS\IS-Team1-Project\database.accdb";
         public AdminProfile()
         {
             InitializeComponent();
 
 
 
-                string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath;
+                string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + dbPath;
 
             using (OleDbConnection connection = new OleDbConnection(connectionstring))
             {
@@ -58,7 +59,7 @@ namespace IS_Team1_Project
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath;
+            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + dbPath;
 
             using (OleDbConnection connection = new OleDbConnection(connectionstring))
             {
