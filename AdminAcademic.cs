@@ -34,10 +34,5 @@ namespace IS_Team1_Project
         {
             this.academicTableAdapter.Fill(this.databaseDataSet3.academic);
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-          
-        }
     }
 }
