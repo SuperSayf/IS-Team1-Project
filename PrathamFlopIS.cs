@@ -112,7 +112,7 @@ namespace IS_Team1_Project
             using (OleDbConnection connection = new OleDbConnection(connectionstring))
             {
                 connection.Open();
-                OleDbCommand cmd = new OleDbCommand("DELETE FROM academic WHERE academic_number = @selected", connection);
+                OleDbCommand cmd = new OleDbCommand("DELETE FROM academic WHERE academic_num = @selected", connection);
                 cmd.Parameters.AddWithValue("@selected", sSelected);
                 DialogResult ans = MessageBox.Show("Delete this record?", "Confirmation",
                 MessageBoxButtons.YesNo);
