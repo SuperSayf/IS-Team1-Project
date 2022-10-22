@@ -88,7 +88,7 @@ namespace IS_Team1_Project
             using (OleDbConnection connection = new OleDbConnection(connectionstring))
             {
                 connection.Open();
-                OleDbCommand command = new OleDbCommand("INSERT INTO courses_avail (module, lecturer_email, lecturer_number) VALUES (@module, @lecturer_email, @lecturer_number)", connection);
+                OleDbCommand command = new OleDbCommand("INSERT INTO courses_avail ([module], [lecturer_email], [lecturer_number]) VALUES (@module, @lecturer_email, @lecturer_number)", connection);
                 command.Parameters.AddWithValue("@module", txtModule.Text);
                 command.Parameters.AddWithValue("@lecturer_email", txtLecturerEmail.Text);
                 command.Parameters.AddWithValue("@lecturer_number", txtLecturerNumber.Text);
@@ -103,7 +103,7 @@ namespace IS_Team1_Project
         {
             OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source="+ frmLogin.dbPath);
             conn.Open();
-            OleDbCommand cmd = new OleDbCommand("UPDATE courses_avail SET module = @module, lecturer_email = @lecturer_email, lecturer_number = @lecturer_number WHERE lecturer_number = @selected", conn);
+            OleDbCommand cmd = new OleDbCommand("UPDATE courses_avail SET [module] = @module, [lecturer_email] = @lecturer_email, [lecturer_number] = @lecturer_number WHERE [lecturer_number] = @selected", conn);
             cmd.Parameters.AddWithValue("@module", txtModule.Text);
             cmd.Parameters.AddWithValue("@lecturer_email", txtLecturerEmail.Text);
             cmd.Parameters.AddWithValue("@lecturer_number", txtLecturerNumber.Text);
