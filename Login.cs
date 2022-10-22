@@ -22,9 +22,9 @@ namespace IS_Team1_Project
         //public static String dbPath = @"C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\database.accdb";
 
         // Mu'aaz
-        // public static String dbPath = @"";
+         public static String dbPath = @"C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\Application\IS-Team1-Project\database.accdb";
         // Muz
-         public static String dbPath = @"C:\Users\sakhi\Desktop\Coding\IS\IS-Team1-Project\IS-Team1-Project\database.accdb";
+        // public static String dbPath = @"C:\Users\sakhi\Desktop\Coding\IS\IS-Team1-Project\IS-Team1-Project\database.accdb";
         // Miguel
         // public static String dbPath = @"";
         // Pratham
