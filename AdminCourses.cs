@@ -81,5 +81,37 @@ namespace IS_Team1_Project
 
             }
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath;
+            using (OleDbConnection connection = new OleDbConnection(connectionstring))
+            {
+                connection.Open();
+                OleDbCommand command = new OleDbCommand("INSERT INTO courses_avail (module, lecturer_email, lecturer_number) VALUES (@module, @lecturer_email, @lecturer_number)", connection);
+                command.Parameters.AddWithValue("@module", txtModule.Text);
+                command.Parameters.AddWithValue("@lecturer_email", txtLecturerEmail.Text);
+                command.Parameters.AddWithValue("@lecturer_number", txtLecturerNumber.Text);
+                command.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("Module successfully added");
+                refreshGrid();
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source="+ frmLogin.dbPath);
+            conn.Open();
+            OleDbCommand cmd = new OleDbCommand("UPDATE courses_avail SET module = @module, lecturer_email = @lecturer_email, lecturer_number = @lecturer_number WHERE lecturer_number = @selected", conn);
+            cmd.Parameters.AddWithValue("@module", txtModule.Text);
+            cmd.Parameters.AddWithValue("@lecturer_email", txtLecturerEmail.Text);
+            cmd.Parameters.AddWithValue("@lecturer_number", txtLecturerNumber.Text);
+            cmd.Parameters.AddWithValue("@selected", sSelected);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            refreshGrid();
+            MessageBox.Show("1 record updated");
+        }
     }
 }
