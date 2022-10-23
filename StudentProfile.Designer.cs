@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -42,11 +43,16 @@
             this.txtboxFirstName = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnshow = new System.Windows.Forms.Button();
-            this.btnhide = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider3 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -226,47 +232,21 @@
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // btnshow
+            // errorProvider1
             // 
-            this.btnshow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnshow.FlatAppearance.BorderSize = 0;
-            this.btnshow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnshow.ForeColor = System.Drawing.Color.Transparent;
-            this.btnshow.Image = global::IS_Team1_Project.Properties.Resources.icons8_uchiha_eyes_24;
-            this.btnshow.Location = new System.Drawing.Point(271, 325);
-            this.btnshow.Margin = new System.Windows.Forms.Padding(2);
-            this.btnshow.Name = "btnshow";
-            this.btnshow.Size = new System.Drawing.Size(24, 24);
-            this.btnshow.TabIndex = 24;
-            this.btnshow.UseVisualStyleBackColor = true;
-            this.btnshow.Click += new System.EventHandler(this.btnshow_Click);
+            this.errorProvider1.ContainerControl = this;
             // 
-            // btnhide
+            // errorProvider2
             // 
-            this.btnhide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnhide.FlatAppearance.BorderSize = 0;
-            this.btnhide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnhide.ForeColor = System.Drawing.Color.Transparent;
-            this.btnhide.Image = global::IS_Team1_Project.Properties.Resources.icons8_uchiha_eyes_24__1_1;
-            this.btnhide.Location = new System.Drawing.Point(271, 324);
-            this.btnhide.Margin = new System.Windows.Forms.Padding(2);
-            this.btnhide.Name = "btnhide";
-            this.btnhide.Size = new System.Drawing.Size(24, 24);
-            this.btnhide.TabIndex = 23;
-            this.btnhide.UseVisualStyleBackColor = true;
-            this.btnhide.Click += new System.EventHandler(this.btnhide_Click);
+            this.errorProvider2.ContainerControl = this;
             // 
-            // pictureBox1
+            // errorProvider3
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::IS_Team1_Project.Properties.Resources.Profileicon;
-            this.pictureBox1.Location = new System.Drawing.Point(502, 39);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 59);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.errorProvider3.ContainerControl = this;
+            // 
+            // errorProvider4
+            // 
+            this.errorProvider4.ContainerControl = this;
             // 
             // StudentProfile
             // 
@@ -285,7 +265,10 @@
             this.Text = "StudentProfile";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +293,9 @@
         private System.Windows.Forms.TextBox txtboxFirstName;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.ErrorProvider errorProvider3;
+        private System.Windows.Forms.ErrorProvider errorProvider4;
     }
 }
