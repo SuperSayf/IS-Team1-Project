@@ -135,5 +135,85 @@ namespace IS_Team1_Project
             selectedCourse = course2;
             StudentMain.loadform(new StudentQuizManager());
         }
+
+        private void pnl1_MouseEnter(object sender, EventArgs e)
+        {
+            pnl1.BackColor = Color.FromArgb(192, 192, 255);
+        }
+
+        private void pnl1_MouseLeave(object sender, EventArgs e)
+        {
+            pnl1.BackColor = Color.FromArgb(16, 25, 56);
+        }
+
+        private void pnl2_MouseEnter(object sender, EventArgs e)
+        {
+            pnl2.BackColor = Color.FromArgb(192, 192, 255);
+        }
+
+        private void pnl2_MouseLeave(object sender, EventArgs e)
+        {
+            pnl2.BackColor = Color.FromArgb(16, 25, 56);
+        }
+
+        private void lblCourseName1_MouseEnter(object sender, EventArgs e)
+        {
+            pnl1.BackColor = Color.FromArgb(192, 192, 255);
+        }
+
+        private void lblC1Academic_MouseEnter(object sender, EventArgs e)
+        {
+            pnl1.BackColor = Color.FromArgb(192, 192, 255);
+        }
+
+        private void lblC1Students_MouseEnter(object sender, EventArgs e)
+        {
+            pnl1.BackColor = Color.FromArgb(192, 192, 255);
+        }
+
+        private void lblCourseName2_MouseEnter(object sender, EventArgs e)
+        {
+            pnl2.BackColor = Color.FromArgb(192, 192, 255);
+        }
+
+        private void lblC2Academic_MouseEnter(object sender, EventArgs e)
+        {
+            pnl2.BackColor = Color.FromArgb(192, 192, 255);
+        }
+
+        private void lblC2Students_MouseEnter(object sender, EventArgs e)
+        {
+            pnl2.BackColor = Color.FromArgb(192, 192, 255);
+        }
+
+        private void lblCourseName1_Click(object sender, EventArgs e)
+        {
+            pnl1_Click(sender, e);
+        }
+
+        private void lblC1Academic_Click(object sender, EventArgs e)
+        {
+            pnl1_Click(sender, e);
+        }
+
+        private void lblC1Students_Click(object sender, EventArgs e)
+        {
+            pnl1_Click(sender, e);
+        }
+
+        private void lblCourseName2_Click(object sender, EventArgs e)
+        {
+            pnl2_Click(sender, e);
+        }
+
+        private void lblC2Academic_Click(object sender, EventArgs e)
+        {
+            pnl2_Click(sender, e);
+        }
+
+        private void lblC2Students_Click(object sender, EventArgs e)
+        {
+            pnl2_Click(sender, e);
+        }
     }
 }

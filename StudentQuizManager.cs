@@ -2,6 +2,7 @@
 using System.Data.OleDb;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace IS_Team1_Project
 {
@@ -59,6 +60,10 @@ namespace IS_Team1_Project
                 connection.Close();
             }
 
+            int HighestEasy = 0;
+            int HighestMedium = 0;
+            int HighestHard = 0;
+
             using (OleDbConnection connection = new OleDbConnection(connectionstring))
             {
                 connection.Open();
@@ -70,14 +75,41 @@ namespace IS_Team1_Project
 
                 while (reader.Read())
                 {
-                    if (reader["quiz_difficulty"].ToString() == "Medium")
+                    if (reader["quiz_difficulty"].ToString() == "Easy")
                     {
                         btnMedium.Enabled = true;
+
+                        int score = Convert.ToInt32(reader["quiz_score"].ToString());
+                        if (score >= HighestEasy)
+                        {
+                            HighestEasy = score;
+                            lblEasyHigh.Text = "Your best pass: " + HighestEasy.ToString() + "/10";
+                            trackEasy.Value = HighestEasy;
+                        }
+                    }
+
+                    if (reader["quiz_difficulty"].ToString() == "Medium")
+                    {
+                        btnHard.Enabled = true;
+
+                        int score = Convert.ToInt32(reader["quiz_score"].ToString());
+                        if (score >= HighestMedium)
+                        {
+                            HighestMedium = score;
+                            lblMediumHigh.Text = "Your best pass: " + HighestMedium.ToString() + "/10";
+                            trackMedium.Value = HighestMedium;
+                        }
                     }
 
                     if (reader["quiz_difficulty"].ToString() == "Hard")
                     {
-                        btnHard.Enabled = true;
+                        int score = Convert.ToInt32(reader["quiz_score"].ToString());
+                        if (score >= HighestHard)
+                        {
+                            HighestHard = score;
+                            lblHardHigh.Text = "Your best pass: " + HighestHard.ToString() + "/10";
+                            trackHard.Value = HighestHard;
+                        }
                     }
                 }
 

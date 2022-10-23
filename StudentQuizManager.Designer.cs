@@ -39,6 +39,15 @@
             this.btnSendQuery = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.trackEasy = new System.Windows.Forms.TrackBar();
+            this.trackMedium = new System.Windows.Forms.TrackBar();
+            this.trackHard = new System.Windows.Forms.TrackBar();
+            this.lblEasyHigh = new System.Windows.Forms.Label();
+            this.lblMediumHigh = new System.Windows.Forms.Label();
+            this.lblHardHigh = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.trackEasy)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackMedium)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackHard)).BeginInit();
             this.SuspendLayout();
             // 
             // lblText
@@ -176,12 +185,78 @@
             this.label2.TabIndex = 24;
             this.label2.Text = "Send a query";
             // 
+            // trackEasy
+            // 
+            this.trackEasy.Enabled = false;
+            this.trackEasy.Location = new System.Drawing.Point(311, 224);
+            this.trackEasy.Name = "trackEasy";
+            this.trackEasy.Size = new System.Drawing.Size(104, 45);
+            this.trackEasy.TabIndex = 25;
+            // 
+            // trackMedium
+            // 
+            this.trackMedium.Enabled = false;
+            this.trackMedium.Location = new System.Drawing.Point(311, 295);
+            this.trackMedium.Name = "trackMedium";
+            this.trackMedium.Size = new System.Drawing.Size(104, 45);
+            this.trackMedium.TabIndex = 26;
+            // 
+            // trackHard
+            // 
+            this.trackHard.Enabled = false;
+            this.trackHard.Location = new System.Drawing.Point(311, 366);
+            this.trackHard.Name = "trackHard";
+            this.trackHard.Size = new System.Drawing.Size(104, 45);
+            this.trackHard.TabIndex = 27;
+            // 
+            // lblEasyHigh
+            // 
+            this.lblEasyHigh.AutoSize = true;
+            this.lblEasyHigh.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblEasyHigh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEasyHigh.ForeColor = System.Drawing.Color.White;
+            this.lblEasyHigh.Location = new System.Drawing.Point(321, 257);
+            this.lblEasyHigh.Name = "lblEasyHigh";
+            this.lblEasyHigh.Size = new System.Drawing.Size(112, 12);
+            this.lblEasyHigh.TabIndex = 28;
+            this.lblEasyHigh.Text = "Your best pass: N/A";
+            // 
+            // lblMediumHigh
+            // 
+            this.lblMediumHigh.AutoSize = true;
+            this.lblMediumHigh.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblMediumHigh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMediumHigh.ForeColor = System.Drawing.Color.White;
+            this.lblMediumHigh.Location = new System.Drawing.Point(321, 328);
+            this.lblMediumHigh.Name = "lblMediumHigh";
+            this.lblMediumHigh.Size = new System.Drawing.Size(112, 12);
+            this.lblMediumHigh.TabIndex = 29;
+            this.lblMediumHigh.Text = "Your best pass: N/A";
+            // 
+            // lblHardHigh
+            // 
+            this.lblHardHigh.AutoSize = true;
+            this.lblHardHigh.Cursor = System.Windows.Forms.Cursors.Default;
+            this.lblHardHigh.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHardHigh.ForeColor = System.Drawing.Color.White;
+            this.lblHardHigh.Location = new System.Drawing.Point(321, 399);
+            this.lblHardHigh.Name = "lblHardHigh";
+            this.lblHardHigh.Size = new System.Drawing.Size(112, 12);
+            this.lblHardHigh.TabIndex = 30;
+            this.lblHardHigh.Text = "Your best pass: N/A";
+            // 
             // StudentQuizManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(1080, 676);
+            this.Controls.Add(this.lblHardHigh);
+            this.Controls.Add(this.lblMediumHigh);
+            this.Controls.Add(this.lblEasyHigh);
+            this.Controls.Add(this.trackHard);
+            this.Controls.Add(this.trackMedium);
+            this.Controls.Add(this.trackEasy);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSendQuery);
@@ -198,6 +273,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentQuizManager";
             this.Load += new System.EventHandler(this.StudentQuizManager_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.trackEasy)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackMedium)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackHard)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,5 +294,11 @@
         private System.Windows.Forms.Button btnSendQuery;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TrackBar trackEasy;
+        private System.Windows.Forms.TrackBar trackMedium;
+        private System.Windows.Forms.TrackBar trackHard;
+        private System.Windows.Forms.Label lblEasyHigh;
+        private System.Windows.Forms.Label lblMediumHigh;
+        private System.Windows.Forms.Label lblHardHigh;
     }
 }
