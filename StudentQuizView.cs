@@ -169,6 +169,8 @@ namespace IS_Team1_Project
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            studentAnswers.Add(txtAnswer.Text);
+
             // Compare the studentAnswers array and the answers array
             for (int i = 0; i < studentAnswers.Count; i++)
             {

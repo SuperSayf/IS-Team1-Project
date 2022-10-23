@@ -8,29 +8,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
+using System.IO;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace IS_Team1_Project
 {
-    
     public partial class AdminProgress : Form
     {
         public AdminProgress()
         {
             InitializeComponent();
-            
-        }
-        String studentNumber;
-        String results;
-        private void AdminProgress_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'databaseDataSet3.quiz' table. You can move, or remove it, as needed.
-            this.quizTableAdapter.Fill(this.databaseDataSet3.quiz);
         }
 
+        private String studentNumber;
+        private String results;
+
+        private void AdminProgress_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseDataSet.students' table. You can move, or remove it, as needed.
+            this.studentsTableAdapter.Fill(this.databaseDataSet.students);
+        }
 
         private void myDataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-             studentNumber = myDataGrid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+            studentNumber = myDataGrid.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
             GetStudentResults();
         }
 
@@ -52,16 +55,48 @@ namespace IS_Team1_Project
                 int count = 1;
                 while (reader.Read())
                 {
-
                     results += count + ": Course: " + reader["quiz_course"].ToString() + ",Quiz Difficulty: " + reader["quiz_difficulty"].ToString() + ",Quiz Score: " + reader["quiz_score"].ToString() + "\n";
                     count++;
-                    Console.Write(results);
                 }
 
                 resultsTxt.Text = results;
+                btnPrintReport.Visible = true;
                 connection.Close();
             }
         }
 
+        private void btnPrintReport_Click(object sender, EventArgs e)
+        {
+            // Print the results string to a PDF
+            FolderBrowserDialog folderDlg = new FolderBrowserDialog();
+            folderDlg.ShowNewFolderButton = true;
+            // Show the FolderBrowserDialog.
+            DialogResult result = folderDlg.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                //label2.Text = folderDlg.SelectedPath;
+
+                // open the writer
+                string fileName = Path.Combine(folderDlg.SelectedPath, studentNumber + ".pdf");
+                FileStream fs = new FileStream(fileName, FileMode.Create, FileAccess.Write);
+                Document doc = new Document();
+
+                //Create a New instance of PDFWriter Class for Output File
+                PdfWriter.GetInstance(doc, fs);
+
+                //Open the Document
+                doc.Open();
+
+                //Add the content of Text File to PDF File
+                doc.Add(new Paragraph("Results for Student Number " + studentNumber));
+                doc.Add(new Paragraph("Date printed: " + DateTime.Now.ToShortDateString()));
+                doc.Add(new Paragraph(" "));
+                doc.Add(new Paragraph(results));
+
+                //Close the Document
+                doc.Close();
+                System.Diagnostics.Process.Start(fileName);
+            }
+        }
     }
 }

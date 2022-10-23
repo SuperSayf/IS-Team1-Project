@@ -252,6 +252,7 @@
             this.Name = "StudentMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentMain";
+            this.Load += new System.EventHandler(this.StudentMain_Load);
             this.sidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

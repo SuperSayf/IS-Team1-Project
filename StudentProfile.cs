@@ -23,7 +23,7 @@ namespace IS_Team1_Project
             {
                 connection.Open();
                 OleDbCommand command = new OleDbCommand("SELECT * FROM students WHERE student_num = @student_num", connection);
-                command.Parameters.AddWithValue("@student_num", LoginAdmin.AdminNum);
+                command.Parameters.AddWithValue("@student_num", frmLogin.StudentNum);
                 OleDbDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
@@ -52,8 +52,8 @@ namespace IS_Team1_Project
             using (OleDbConnection connection = new OleDbConnection(connectionstring))
             {
                 connection.Open();
-                OleDbCommand command = new OleDbCommand("update admin set student_num = @student_num ,student_name = @student_name,student_surname = @student_surname,student_email= @student_email,student_password=@student_password", connection);
-                command.Parameters.AddWithValue("@student_num", txtboxStudentNo.Text);
+                OleDbCommand command = new OleDbCommand("update students set student_email = @student_email, student_name = @student_name, student_surname = @student_surname, student_password = @student_password where student_num = @student_num", connection);
+                command.Parameters.AddWithValue("@student_num", frmLogin.StudentNum);
                 command.Parameters.AddWithValue("@student_name", txtboxFirstName.Text);
                 command.Parameters.AddWithValue("@student_surname", txtBoxLastName.Text);
                 command.Parameters.AddWithValue("@student_email", txtboxEmail.Text);

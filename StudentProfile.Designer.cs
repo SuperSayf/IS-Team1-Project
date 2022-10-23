@@ -29,10 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnshow = new System.Windows.Forms.Button();
-            this.btnhide = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -45,8 +42,11 @@
             this.txtboxFirstName = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btnshow = new System.Windows.Forms.Button();
+            this.btnhide = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -59,18 +59,6 @@
             this.label1.Size = new System.Drawing.Size(89, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "Profile";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::IS_Team1_Project.Properties.Resources.Profileicon;
-            this.pictureBox1.Location = new System.Drawing.Point(499, 39);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 59);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -91,36 +79,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(364, 468);
             this.panel1.TabIndex = 10;
-            // 
-            // btnshow
-            // 
-            this.btnshow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnshow.FlatAppearance.BorderSize = 0;
-            this.btnshow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnshow.ForeColor = System.Drawing.Color.Transparent;
-            this.btnshow.Image = global::IS_Team1_Project.Properties.Resources.eyeopen;
-            this.btnshow.Location = new System.Drawing.Point(278, 333);
-            this.btnshow.Margin = new System.Windows.Forms.Padding(2);
-            this.btnshow.Name = "btnshow";
-            this.btnshow.Size = new System.Drawing.Size(19, 16);
-            this.btnshow.TabIndex = 24;
-            this.btnshow.UseVisualStyleBackColor = true;
-            this.btnshow.Click += new System.EventHandler(this.btnshow_Click);
-            // 
-            // btnhide
-            // 
-            this.btnhide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnhide.FlatAppearance.BorderSize = 0;
-            this.btnhide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnhide.ForeColor = System.Drawing.Color.Transparent;
-            this.btnhide.Image = global::IS_Team1_Project.Properties.Resources.eye_password;
-            this.btnhide.Location = new System.Drawing.Point(278, 332);
-            this.btnhide.Margin = new System.Windows.Forms.Padding(2);
-            this.btnhide.Name = "btnhide";
-            this.btnhide.Size = new System.Drawing.Size(19, 16);
-            this.btnhide.TabIndex = 23;
-            this.btnhide.UseVisualStyleBackColor = true;
-            this.btnhide.Click += new System.EventHandler(this.btnhide_Click);
             // 
             // panel6
             // 
@@ -240,9 +198,9 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
-            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
             this.btnClear.ForeColor = System.Drawing.Color.Transparent;
             this.btnClear.Location = new System.Drawing.Point(339, 612);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2);
@@ -255,9 +213,9 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(39)))), ((int)(((byte)(69)))));
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
             this.btnUpdate.ForeColor = System.Drawing.Color.Transparent;
             this.btnUpdate.Location = new System.Drawing.Point(612, 612);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
@@ -267,6 +225,48 @@
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnshow
+            // 
+            this.btnshow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnshow.FlatAppearance.BorderSize = 0;
+            this.btnshow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnshow.ForeColor = System.Drawing.Color.Transparent;
+            this.btnshow.Image = global::IS_Team1_Project.Properties.Resources.icons8_uchiha_eyes_24;
+            this.btnshow.Location = new System.Drawing.Point(271, 325);
+            this.btnshow.Margin = new System.Windows.Forms.Padding(2);
+            this.btnshow.Name = "btnshow";
+            this.btnshow.Size = new System.Drawing.Size(24, 24);
+            this.btnshow.TabIndex = 24;
+            this.btnshow.UseVisualStyleBackColor = true;
+            this.btnshow.Click += new System.EventHandler(this.btnshow_Click);
+            // 
+            // btnhide
+            // 
+            this.btnhide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnhide.FlatAppearance.BorderSize = 0;
+            this.btnhide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhide.ForeColor = System.Drawing.Color.Transparent;
+            this.btnhide.Image = global::IS_Team1_Project.Properties.Resources.icons8_uchiha_eyes_24__1_1;
+            this.btnhide.Location = new System.Drawing.Point(271, 324);
+            this.btnhide.Margin = new System.Windows.Forms.Padding(2);
+            this.btnhide.Name = "btnhide";
+            this.btnhide.Size = new System.Drawing.Size(24, 24);
+            this.btnhide.TabIndex = 23;
+            this.btnhide.UseVisualStyleBackColor = true;
+            this.btnhide.Click += new System.EventHandler(this.btnhide_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::IS_Team1_Project.Properties.Resources.Profileicon;
+            this.pictureBox1.Location = new System.Drawing.Point(502, 39);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(63, 59);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // StudentProfile
             // 
@@ -283,9 +283,9 @@
             this.Name = "StudentProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StudentProfile";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

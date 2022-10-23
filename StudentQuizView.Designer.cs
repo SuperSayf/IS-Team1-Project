@@ -31,8 +31,6 @@
             this.lblCourseName = new System.Windows.Forms.Label();
             this.lblDifficulty = new System.Windows.Forms.Label();
             this.lblQuestion = new System.Windows.Forms.Label();
-            this.radTrue = new System.Windows.Forms.RadioButton();
-            this.radFalse = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtAnswer = new System.Windows.Forms.TextBox();
             this.btnNext = new System.Windows.Forms.Button();
@@ -47,11 +45,11 @@
             this.lblCourseName.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblCourseName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCourseName.ForeColor = System.Drawing.Color.White;
-            this.lblCourseName.Location = new System.Drawing.Point(429, 28);
+            this.lblCourseName.Location = new System.Drawing.Point(455, 29);
             this.lblCourseName.Name = "lblCourseName";
-            this.lblCourseName.Size = new System.Drawing.Size(202, 24);
+            this.lblCourseName.Size = new System.Drawing.Size(114, 24);
             this.lblCourseName.TabIndex = 19;
-            this.lblCourseName.Text = "Course Name Here";
+            this.lblCourseName.Text = "XXXXXXXX";
             this.lblCourseName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lblDifficulty
@@ -69,43 +67,15 @@
             // 
             // lblQuestion
             // 
-            this.lblQuestion.AutoSize = true;
             this.lblQuestion.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblQuestion.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuestion.ForeColor = System.Drawing.Color.White;
             this.lblQuestion.Location = new System.Drawing.Point(199, 231);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(123, 18);
+            this.lblQuestion.Size = new System.Drawing.Size(625, 18);
             this.lblQuestion.TabIndex = 21;
             this.lblQuestion.Text = "Question Here";
-            // 
-            // radTrue
-            // 
-            this.radTrue.AutoSize = true;
-            this.radTrue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radTrue.ForeColor = System.Drawing.Color.White;
-            this.radTrue.Location = new System.Drawing.Point(202, 434);
-            this.radTrue.Name = "radTrue";
-            this.radTrue.Size = new System.Drawing.Size(49, 16);
-            this.radTrue.TabIndex = 22;
-            this.radTrue.TabStop = true;
-            this.radTrue.Text = "True";
-            this.radTrue.UseVisualStyleBackColor = true;
-            this.radTrue.Visible = false;
-            // 
-            // radFalse
-            // 
-            this.radFalse.AutoSize = true;
-            this.radFalse.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radFalse.ForeColor = System.Drawing.Color.White;
-            this.radFalse.Location = new System.Drawing.Point(771, 434);
-            this.radFalse.Name = "radFalse";
-            this.radFalse.Size = new System.Drawing.Size(53, 16);
-            this.radFalse.TabIndex = 23;
-            this.radFalse.TabStop = true;
-            this.radFalse.Text = "False";
-            this.radFalse.UseVisualStyleBackColor = true;
-            this.radFalse.Visible = false;
+            this.lblQuestion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
@@ -127,6 +97,10 @@
             // 
             // btnNext
             // 
+            this.btnNext.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.btnNext.ForeColor = System.Drawing.Color.White;
             this.btnNext.Location = new System.Drawing.Point(797, 594);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(27, 23);
@@ -137,6 +111,10 @@
             // 
             // btnPrev
             // 
+            this.btnPrev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrev.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.btnPrev.ForeColor = System.Drawing.Color.White;
             this.btnPrev.Location = new System.Drawing.Point(202, 594);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(27, 23);
@@ -160,9 +138,13 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(484, 615);
+            this.btnSubmit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F);
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(459, 594);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.Size = new System.Drawing.Size(89, 23);
             this.btnSubmit.TabIndex = 29;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -181,8 +163,6 @@
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtAnswer);
-            this.Controls.Add(this.radFalse);
-            this.Controls.Add(this.radTrue);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.lblDifficulty);
             this.Controls.Add(this.lblCourseName);
@@ -201,8 +181,6 @@
         private System.Windows.Forms.Label lblCourseName;
         private System.Windows.Forms.Label lblDifficulty;
         private System.Windows.Forms.Label lblQuestion;
-        private System.Windows.Forms.RadioButton radTrue;
-        private System.Windows.Forms.RadioButton radFalse;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtAnswer;
         private System.Windows.Forms.Button btnNext;

@@ -33,9 +33,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnMenu = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnCourses = new System.Windows.Forms.Button();
@@ -58,8 +55,6 @@
             this.sidebar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -78,7 +73,6 @@
             // 
             this.sidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(25)))), ((int)(((byte)(45)))));
             this.sidebar.Controls.Add(this.panel1);
-            this.sidebar.Controls.Add(this.panel2);
             this.sidebar.Controls.Add(this.panel4);
             this.sidebar.Controls.Add(this.panel8);
             this.sidebar.Controls.Add(this.panel10);
@@ -123,44 +117,10 @@
             this.btnMenu.TabStop = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(3, 109);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 46);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnHome);
-            this.panel3.Location = new System.Drawing.Point(8, 8);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 46);
-            this.panel3.TabIndex = 4;
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::IS_Team1_Project.Properties.Resources.icons8_home_24__1_;
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(-11, -11);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnHome.Size = new System.Drawing.Size(223, 57);
-            this.btnHome.TabIndex = 3;
-            this.btnHome.Text = "                  Home";
-            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(3, 161);
+            this.panel4.Location = new System.Drawing.Point(3, 109);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 51);
             this.panel4.TabIndex = 2;
@@ -194,7 +154,7 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(3, 218);
+            this.panel8.Location = new System.Drawing.Point(3, 166);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(200, 46);
             this.panel8.TabIndex = 4;
@@ -228,7 +188,7 @@
             // panel10
             // 
             this.panel10.Controls.Add(this.panel11);
-            this.panel10.Location = new System.Drawing.Point(3, 270);
+            this.panel10.Location = new System.Drawing.Point(3, 218);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(200, 46);
             this.panel10.TabIndex = 5;
@@ -262,7 +222,7 @@
             // panel12
             // 
             this.panel12.Controls.Add(this.panel13);
-            this.panel12.Location = new System.Drawing.Point(3, 322);
+            this.panel12.Location = new System.Drawing.Point(3, 270);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(200, 46);
             this.panel12.TabIndex = 6;
@@ -296,7 +256,7 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.panel7);
-            this.panel6.Location = new System.Drawing.Point(3, 374);
+            this.panel6.Location = new System.Drawing.Point(3, 322);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 46);
             this.panel6.TabIndex = 3;
@@ -374,12 +334,11 @@
             this.Name = "AdminMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminMain";
+            this.Load += new System.EventHandler(this.AdminMain_Load);
             this.sidebar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
@@ -406,9 +365,6 @@
         private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.PictureBox btnClose;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnCourses;

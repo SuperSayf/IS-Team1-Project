@@ -113,5 +113,10 @@ namespace IS_Team1_Project
             // Minimize the application
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void StudentMain_Load(object sender, EventArgs e)
+        {
+            loadform(new StudentCourses());
+        }
     }
 }
