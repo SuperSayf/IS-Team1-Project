@@ -155,3 +155,7 @@ D:\IS Project\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.GenerateResourc
 D:\IS Project\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.CoreCompileInputs.cache
 D:\IS Project\IS-Team1-Project\obj\Debug\IS-Team1-Project.exe
 D:\IS Project\IS-Team1-Project\obj\Debug\IS-Team1-Project.pdb
+C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\bin\Debug\itextsharp.dll
+C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\bin\Debug\itextsharp.xml
+C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.CopyComplete

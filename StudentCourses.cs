@@ -53,6 +53,24 @@ namespace IS_Team1_Project
                         lblCourseName1.Text = course1;
                         lblCourseName2.Text = course2;
 
+                        // SQL to display the lecturers name
+                        OleDbCommand command4 = new OleDbCommand("SELECT academic_name FROM academic WHERE academic_course = @academic_course", connection);
+                        command4.Parameters.AddWithValue("@academic_course", course1);
+                        OleDbDataReader reader4 = command4.ExecuteReader();
+                        if (reader4.Read())
+                        {
+                            lblC1Academic.Text = "Lecturer: " + reader4["academic_name"].ToString();
+                        }
+
+                        // SQL to display the lecturers name
+                        OleDbCommand command5 = new OleDbCommand("SELECT academic_name FROM academic WHERE academic_course = @academic_course", connection);
+                        command5.Parameters.AddWithValue("@academic_course", course2);
+                        OleDbDataReader reader5 = command5.ExecuteReader();
+                        if (reader5.Read())
+                        {
+                            lblC2Academic.Text = "Lecturer: " + reader5["academic_name"].ToString();
+                        }
+
                         // SQL to count how many students in the table have the same course
                         OleDbCommand command2 = new OleDbCommand("SELECT COUNT(*) FROM courses WHERE course_1 = @course_1", connection);
                         command2.Parameters.AddWithValue("@course_1", course1);

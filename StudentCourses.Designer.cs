@@ -93,7 +93,7 @@
             this.lblC1Academic.AutoSize = true;
             this.lblC1Academic.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblC1Academic.ForeColor = System.Drawing.Color.White;
-            this.lblC1Academic.Location = new System.Drawing.Point(100, 116);
+            this.lblC1Academic.Location = new System.Drawing.Point(87, 116);
             this.lblC1Academic.Name = "lblC1Academic";
             this.lblC1Academic.Size = new System.Drawing.Size(175, 28);
             this.lblC1Academic.TabIndex = 3;
@@ -150,7 +150,7 @@
             this.lblC2Academic.AutoSize = true;
             this.lblC2Academic.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblC2Academic.ForeColor = System.Drawing.Color.White;
-            this.lblC2Academic.Location = new System.Drawing.Point(105, 116);
+            this.lblC2Academic.Location = new System.Drawing.Point(95, 116);
             this.lblC2Academic.Name = "lblC2Academic";
             this.lblC2Academic.Size = new System.Drawing.Size(175, 28);
             this.lblC2Academic.TabIndex = 4;
