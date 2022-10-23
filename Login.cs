@@ -19,7 +19,7 @@ namespace IS_Team1_Project
         // Database Paths - Comment out everyone elses except yours
 
         //Sayf
-        public static String dbPath = @"C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\database.accdb";
+        //public static String dbPath = @"C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\database.accdb";
 
         // Mu'aaz
          //public static String dbPath = @"C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\Application\IS-Team1-Project\database.accdb";
@@ -28,7 +28,7 @@ namespace IS_Team1_Project
         // Miguel
         // public static String dbPath = @"";
         // Pratham
-        //public static String dbPath = @"C:\Users\prath\OneDrive\Desktop\Wits 2\2nd Year\Sem 2\IS 2000A\IS-Team1-Project\database.accdb";
+        public static String dbPath = @"C:\Users\prath\OneDrive\Desktop\Wits 2\2nd Year\Sem 2\IS 2000A\IS-Team1-Project\database.accdb";
         // Daggy
         //public static String dbPath = @"C:\Users\momos\Documents\GitHub\IS-Team1-Project\database.accdb";
 
