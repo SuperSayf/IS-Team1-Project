@@ -59,6 +59,38 @@ namespace IS_Team1_Project
             }
         }
 
+        public bool ValidInput()
+        {
+            if (txtNewNum.Text == String.Empty)
+            {
+                return false;
+            }
+            else if (txtNewEmail.Text == String.Empty)
+            {
+                return false;
+            }
+            else if (txtNewName.Text == String.Empty)
+            {
+                return false;
+            }
+            else if (txtNewSurname.Text == String.Empty)
+            {
+                return false;
+            }
+            else if (txtNewCourse.Text == String.Empty)
+            {
+                return false;
+            }
+            else if (txtNewPass.Text == String.Empty)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             
@@ -89,21 +121,30 @@ namespace IS_Team1_Project
         private void btnnewAdd_Click_1(object sender, EventArgs e)
         {
             string connectionstring = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath;
-            using (OleDbConnection connection = new OleDbConnection(connectionstring))
+            Boolean valid = ValidInput();
+            if (valid == true)
             {
-                connection.Open();
-                OleDbCommand command = new OleDbCommand("INSERT INTO academic ([academic_num], [academic_email], [academic_name], [academic_surname], [academic_course], [academic_password]) VALUES (@academic_num, @academic_email, @academic_name, @academic_surname, @academic_course, @academic_password)", connection);
-                command.Parameters.AddWithValue("@academic_num", txtNewNum.Text);
-                command.Parameters.AddWithValue("@academic_email", txtNewEmail.Text);
-                command.Parameters.AddWithValue("@academic_name", txtNewName.Text);
-                command.Parameters.AddWithValue("@academic_surname", txtNewSurname.Text);
-                command.Parameters.AddWithValue("@academic_course", txtNewCourse.Text);
-                command.Parameters.AddWithValue("@academic_password", txtNewPass.Text);
-                command.ExecuteNonQuery();
-                connection.Close();
-                MessageBox.Show("Module successfully added");
-                refreshnewGrid();
+                using (OleDbConnection connection = new OleDbConnection(connectionstring))
+                {
+                    connection.Open();
+                    OleDbCommand command = new OleDbCommand("INSERT INTO academic ([academic_num], [academic_email], [academic_name], [academic_surname], [academic_course], [academic_password]) VALUES (@academic_num, @academic_email, @academic_name, @academic_surname, @academic_course, @academic_password)", connection);
+                    command.Parameters.AddWithValue("@academic_num", txtNewNum.Text);
+                    command.Parameters.AddWithValue("@academic_email", txtNewEmail.Text);
+                    command.Parameters.AddWithValue("@academic_name", txtNewName.Text);
+                    command.Parameters.AddWithValue("@academic_surname", txtNewSurname.Text);
+                    command.Parameters.AddWithValue("@academic_course", txtNewCourse.Text);
+                    command.Parameters.AddWithValue("@academic_password", txtNewPass.Text);
+                    command.ExecuteNonQuery();
+                    connection.Close();
+                    MessageBox.Show("Module successfully added");
+                    refreshnewGrid();
+                }
             }
+            else
+            {
+                MessageBox.Show("Do not leave any textboxes empty");
+            }
+            
         }
 
         private void btnnewDelete_Click_1(object sender, EventArgs e)
@@ -133,20 +174,27 @@ namespace IS_Team1_Project
 
         private void btnnewUpdate_Click_1(object sender, EventArgs e)
         {
-            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath);
-            conn.Open();
-            OleDbCommand cmd = new OleDbCommand("UPDATE academic SET  [academic_email] = @academic_email, [academic_name] = @academic_name, [academic_surname] = @academic_surname,[academic_course] = @academic_course, [academic_password]=@academic_password WHERE [academic_num] = @selected", conn);
-            //cmd.Parameters.AddWithValue("@academic_num", txtNewNum.Text);
-            cmd.Parameters.AddWithValue("@academic_email", txtNewEmail.Text);
-            cmd.Parameters.AddWithValue("@academic_name", txtNewName.Text);
-            cmd.Parameters.AddWithValue("@academic_surname", txtNewSurname.Text);
-            cmd.Parameters.AddWithValue("@academic_course", txtNewCourse.Text);
-            cmd.Parameters.AddWithValue("@academic_password", txtNewPass.Text);
-            cmd.Parameters.AddWithValue("@selected", sSelected);
-            cmd.ExecuteNonQuery();
-            conn.Close();
-            refreshnewGrid();
-            MessageBox.Show("1 record updated");
+            if (sSelected == txtNewNum.Text)
+            {
+                OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath);
+                conn.Open();
+                OleDbCommand cmd = new OleDbCommand("UPDATE academic SET  [academic_email] = @academic_email, [academic_name] = @academic_name, [academic_surname] = @academic_surname,[academic_course] = @academic_course, [academic_password]=@academic_password WHERE [academic_num] = @selected", conn);
+                //cmd.Parameters.AddWithValue("@academic_num", txtNewNum.Text);
+                cmd.Parameters.AddWithValue("@academic_email", txtNewEmail.Text);
+                cmd.Parameters.AddWithValue("@academic_name", txtNewName.Text);
+                cmd.Parameters.AddWithValue("@academic_surname", txtNewSurname.Text);
+                cmd.Parameters.AddWithValue("@academic_course", txtNewCourse.Text);
+                cmd.Parameters.AddWithValue("@academic_password", txtNewPass.Text);
+                cmd.Parameters.AddWithValue("@selected", sSelected);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+                refreshnewGrid();
+                MessageBox.Show("1 record updated");
+            }
+            else
+            {
+                MessageBox.Show("You may not change the Primary Key");
+            }
         }
 
         private void btnnewClear_Click_1(object sender, EventArgs e)
