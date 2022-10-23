@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -48,12 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminAcademic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminAcademic.Designer.cs">
-      <DependentUpon>AdminAcademic.cs</DependentUpon>
-    </Compile>
     <Compile Include="AdminCourses.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +104,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>databaseDataSet31.xsd</DependentUpon>
     </Compile>
+    <Compile Include="databaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>databaseDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +120,12 @@
     </Compile>
     <Compile Include="LoginAdmin.Designer.cs">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrathamFlopIS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrathamFlopIS.Designer.cs">
+      <DependentUpon>PrathamFlopIS.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -166,9 +171,6 @@
     <Compile Include="StudentRegister.Designer.cs">
       <DependentUpon>StudentRegister.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminAcademic.resx">
-      <DependentUpon>AdminAcademic.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdminCourses.resx">
       <DependentUpon>AdminCourses.cs</DependentUpon>
     </EmbeddedResource>
@@ -192,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginAdmin.resx">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrathamFlopIS.resx">
+      <DependentUpon>PrathamFlopIS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -267,6 +272,17 @@
     </None>
     <None Include="databaseDataSet31.xss">
       <DependentUpon>databaseDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="databaseDataSet4.xsc">
+      <DependentUpon>databaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="databaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>databaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="databaseDataSet4.xss">
+      <DependentUpon>databaseDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
