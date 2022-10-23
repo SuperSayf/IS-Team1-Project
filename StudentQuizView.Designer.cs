@@ -47,7 +47,7 @@
             this.lblCourseName.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblCourseName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCourseName.ForeColor = System.Drawing.Color.White;
-            this.lblCourseName.Location = new System.Drawing.Point(418, 36);
+            this.lblCourseName.Location = new System.Drawing.Point(429, 28);
             this.lblCourseName.Name = "lblCourseName";
             this.lblCourseName.Size = new System.Drawing.Size(202, 24);
             this.lblCourseName.TabIndex = 19;

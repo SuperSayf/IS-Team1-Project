@@ -102,11 +102,6 @@ namespace IS_Team1_Project
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void StudentMain_Shown(object sender, EventArgs e)
-        {
-            btnHome.PerformClick();
-        }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             // Close the application
