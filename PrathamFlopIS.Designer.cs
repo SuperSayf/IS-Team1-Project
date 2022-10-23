@@ -67,7 +67,7 @@ namespace IS_Team1_Project
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(113, 115);
+            this.label1.Location = new System.Drawing.Point(1573, 413);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(343, 42);
             this.label1.TabIndex = 0;
@@ -76,7 +76,7 @@ namespace IS_Team1_Project
             // 
             // txtNewNum
             // 
-            this.txtNewNum.Location = new System.Drawing.Point(120, 180);
+            this.txtNewNum.Location = new System.Drawing.Point(1576, 458);
             this.txtNewNum.Name = "txtNewNum";
             this.txtNewNum.Size = new System.Drawing.Size(370, 35);
             this.txtNewNum.TabIndex = 1;
@@ -86,7 +86,7 @@ namespace IS_Team1_Project
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(113, 246);
+            this.label2.Location = new System.Drawing.Point(1569, 496);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(299, 42);
             this.label2.TabIndex = 2;
@@ -94,7 +94,7 @@ namespace IS_Team1_Project
             // 
             // txtNewEmail
             // 
-            this.txtNewEmail.Location = new System.Drawing.Point(120, 329);
+            this.txtNewEmail.Location = new System.Drawing.Point(1576, 541);
             this.txtNewEmail.Name = "txtNewEmail";
             this.txtNewEmail.Size = new System.Drawing.Size(370, 35);
             this.txtNewEmail.TabIndex = 3;
@@ -104,7 +104,7 @@ namespace IS_Team1_Project
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(113, 405);
+            this.label3.Location = new System.Drawing.Point(1569, 579);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(303, 42);
             this.label3.TabIndex = 4;
@@ -112,9 +112,9 @@ namespace IS_Team1_Project
             // 
             // txtNewName
             // 
-            this.txtNewName.Location = new System.Drawing.Point(120, 476);
+            this.txtNewName.Location = new System.Drawing.Point(1576, 624);
             this.txtNewName.Name = "txtNewName";
-            this.txtNewName.Size = new System.Drawing.Size(100, 35);
+            this.txtNewName.Size = new System.Drawing.Size(370, 35);
             this.txtNewName.TabIndex = 5;
             // 
             // label4
@@ -122,7 +122,7 @@ namespace IS_Team1_Project
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(113, 540);
+            this.label4.Location = new System.Drawing.Point(1573, 662);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(360, 42);
             this.label4.TabIndex = 6;
@@ -130,9 +130,9 @@ namespace IS_Team1_Project
             // 
             // txtNewSurname
             // 
-            this.txtNewSurname.Location = new System.Drawing.Point(120, 602);
+            this.txtNewSurname.Location = new System.Drawing.Point(1576, 707);
             this.txtNewSurname.Name = "txtNewSurname";
-            this.txtNewSurname.Size = new System.Drawing.Size(100, 35);
+            this.txtNewSurname.Size = new System.Drawing.Size(370, 35);
             this.txtNewSurname.TabIndex = 7;
             // 
             // label5
@@ -140,7 +140,7 @@ namespace IS_Team1_Project
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(113, 669);
+            this.label5.Location = new System.Drawing.Point(1573, 745);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(330, 42);
             this.label5.TabIndex = 8;
@@ -148,9 +148,9 @@ namespace IS_Team1_Project
             // 
             // txtNewCourse
             // 
-            this.txtNewCourse.Location = new System.Drawing.Point(120, 728);
+            this.txtNewCourse.Location = new System.Drawing.Point(1576, 790);
             this.txtNewCourse.Name = "txtNewCourse";
-            this.txtNewCourse.Size = new System.Drawing.Size(100, 35);
+            this.txtNewCourse.Size = new System.Drawing.Size(370, 35);
             this.txtNewCourse.TabIndex = 9;
             // 
             // label6
@@ -158,7 +158,7 @@ namespace IS_Team1_Project
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(113, 785);
+            this.label6.Location = new System.Drawing.Point(1569, 828);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(377, 42);
             this.label6.TabIndex = 10;
@@ -166,16 +166,16 @@ namespace IS_Team1_Project
             // 
             // txtNewPass
             // 
-            this.txtNewPass.Location = new System.Drawing.Point(120, 851);
+            this.txtNewPass.Location = new System.Drawing.Point(1576, 873);
             this.txtNewPass.Name = "txtNewPass";
-            this.txtNewPass.Size = new System.Drawing.Size(100, 35);
+            this.txtNewPass.Size = new System.Drawing.Size(370, 35);
             this.txtNewPass.TabIndex = 11;
             // 
             // btnnewDelete
             // 
             this.btnnewDelete.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnnewDelete.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnewDelete.Location = new System.Drawing.Point(1319, 221);
+            this.btnnewDelete.Location = new System.Drawing.Point(2084, 458);
             this.btnnewDelete.Name = "btnnewDelete";
             this.btnnewDelete.Size = new System.Drawing.Size(233, 69);
             this.btnnewDelete.TabIndex = 12;
@@ -187,7 +187,7 @@ namespace IS_Team1_Project
             // 
             this.btnnewAdd.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnnewAdd.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnewAdd.Location = new System.Drawing.Point(1319, 341);
+            this.btnnewAdd.Location = new System.Drawing.Point(2084, 590);
             this.btnnewAdd.Name = "btnnewAdd";
             this.btnnewAdd.Size = new System.Drawing.Size(233, 69);
             this.btnnewAdd.TabIndex = 13;
@@ -199,7 +199,7 @@ namespace IS_Team1_Project
             // 
             this.btnnewUpdate.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnnewUpdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnewUpdate.Location = new System.Drawing.Point(1319, 476);
+            this.btnnewUpdate.Location = new System.Drawing.Point(2084, 707);
             this.btnnewUpdate.Name = "btnnewUpdate";
             this.btnnewUpdate.Size = new System.Drawing.Size(233, 69);
             this.btnnewUpdate.TabIndex = 14;
@@ -211,7 +211,7 @@ namespace IS_Team1_Project
             // 
             this.btnnewClear.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnnewClear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnewClear.Location = new System.Drawing.Point(1319, 581);
+            this.btnnewClear.Location = new System.Drawing.Point(2084, 815);
             this.btnnewClear.Name = "btnnewClear";
             this.btnnewClear.Size = new System.Drawing.Size(233, 69);
             this.btnnewClear.TabIndex = 15;
@@ -251,11 +251,11 @@ namespace IS_Team1_Project
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.academicDataGridView.DataSource = this.academicBindingSource;
-            this.academicDataGridView.Location = new System.Drawing.Point(476, 1042);
+            this.academicDataGridView.Location = new System.Drawing.Point(25, 320);
             this.academicDataGridView.Name = "academicDataGridView";
             this.academicDataGridView.RowHeadersWidth = 92;
             this.academicDataGridView.RowTemplate.Height = 37;
-            this.academicDataGridView.Size = new System.Drawing.Size(1543, 220);
+            this.academicDataGridView.Size = new System.Drawing.Size(1521, 702);
             this.academicDataGridView.TabIndex = 17;
             this.academicDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.academicDataGridView_CellClick);
             this.academicDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.academicDataGridView_CellContentClick);
