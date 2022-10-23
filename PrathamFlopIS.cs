@@ -135,7 +135,7 @@ namespace IS_Team1_Project
         {
             OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + frmLogin.dbPath);
             conn.Open();
-            OleDbCommand cmd = new OleDbCommand("UPDATE academic SET [academic_num] = @academic_num, [academic_email] = @academic_email, [academic_name] = @academic_name, [academic_surname] = @academic_surname,[academic_course] = @academic_course,[academic_course] = @academic_course, [academic_password]=@academic_password WHERE [academic_num] = @selected", conn);
+            OleDbCommand cmd = new OleDbCommand("UPDATE academic SET [academic_num] = @academic_num, [academic_email] = @academic_email, [academic_name] = @academic_name, [academic_surname] = @academic_surname,[academic_course] = @academic_course, [academic_password]=@academic_password WHERE [academic_num] = @selected", conn);
             cmd.Parameters.AddWithValue("@academic_num", txtNewNum.Text);
             cmd.Parameters.AddWithValue("@academic_email", txtNewEmail.Text);
             cmd.Parameters.AddWithValue("@academic_name", txtNewName.Text);
