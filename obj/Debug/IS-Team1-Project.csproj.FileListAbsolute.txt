@@ -129,3 +129,29 @@ C:\Users\prath\OneDrive\Desktop\Wits 2\2nd Year\Sem 2\IS 2000A\IS-Team1-Project\
 C:\Users\prath\OneDrive\Desktop\Wits 2\2nd Year\Sem 2\IS 2000A\IS-Team1-Project\bin\Debug\IS-Team1-Project.exe
 C:\Users\prath\OneDrive\Desktop\Wits 2\2nd Year\Sem 2\IS 2000A\IS-Team1-Project\bin\Debug\IS-Team1-Project.pdb
 C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\obj\Debug\IS_Team1_Project.PrathamFlopIS.resources
+D:\IS Project\IS-Team1-Project\bin\Debug\database.accdb
+D:\IS Project\IS-Team1-Project\bin\Debug\IS-Team1-Project.exe.config
+D:\IS Project\IS-Team1-Project\bin\Debug\IS-Team1-Project.exe
+D:\IS Project\IS-Team1-Project\bin\Debug\IS-Team1-Project.pdb
+D:\IS Project\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.AssemblyReference.cache
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminCourses.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminHome.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminMain.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminProfile.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminProgress.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminQuries.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.frmLogin.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.LoginAdmin.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.PrathamFlopIS.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.Properties.Resources.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentCourses.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentHome.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentMain.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentProfile.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentQuizManager.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentQuizView.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentRegister.resources
+D:\IS Project\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.GenerateResource.cache
+D:\IS Project\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.CoreCompileInputs.cache
+D:\IS Project\IS-Team1-Project\obj\Debug\IS-Team1-Project.exe
+D:\IS Project\IS-Team1-Project\obj\Debug\IS-Team1-Project.pdb
