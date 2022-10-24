@@ -27,8 +27,9 @@ namespace IS_Team1_Project
             {
                 connection.Open();
                 // SQL to find where in the queries table the query_answered is true and query_course is selectedCourse
-                OleDbCommand command = new OleDbCommand("SELECT * FROM queries WHERE query_answered = @query_answered AND query_course = @query_course", connection);
+                OleDbCommand command = new OleDbCommand("SELECT * FROM queries WHERE query_answered = @query_answered AND query_course = @query_course AND student_num = @student_num", connection);
                 command.Parameters.AddWithValue("@query_answered", true);
+                command.Parameters.AddWithValue("@student_num", frmLogin.StudentNum);
                 command.Parameters.AddWithValue("@query_course", StudentCourses.selectedCourse);
                 OleDbDataReader reader = command.ExecuteReader();
 
@@ -68,7 +69,8 @@ namespace IS_Team1_Project
             {
                 connection.Open();
                 // SQL to find where in the quiz table quiz_pass is true and quiz_course is selectedCourse
-                OleDbCommand command = new OleDbCommand("SELECT * FROM quiz WHERE quiz_pass = @quiz_pass AND quiz_course = @quiz_course", connection);
+                OleDbCommand command = new OleDbCommand("SELECT * FROM quiz WHERE [student_num] = @student_num AND [quiz_pass] = @quiz_pass AND [quiz_course] = @quiz_course", connection);
+                command.Parameters.AddWithValue("@student_num", frmLogin.StudentNum);
                 command.Parameters.AddWithValue("@quiz_pass", true);
                 command.Parameters.AddWithValue("@quiz_course", StudentCourses.selectedCourse);
                 OleDbDataReader reader = command.ExecuteReader();

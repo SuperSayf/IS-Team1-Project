@@ -78,7 +78,7 @@ namespace IS_Team1_Project
 
                 // open the writer
                 string fileName = Path.Combine(folderDlg.SelectedPath, studentNumber + ".pdf");
-                FileStream fs = new FileStream(fileName, FileMode.Create, FileAccess.Write);
+                //FileStream fs = new FileStream(fileName, FileMode.Create, FileAccess.Write);
                 Document doc = new Document();
 
                 //Create a New instance of PDFWriter Class for Output File

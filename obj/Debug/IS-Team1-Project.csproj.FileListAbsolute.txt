@@ -159,3 +159,33 @@ C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\bin\Debug\BouncyCas
 C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\bin\Debug\itextsharp.dll
 C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\bin\Debug\itextsharp.xml
 C:\Users\ACER PREDATOR 300\Desktop\Projects\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.CopyComplete
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\bin\Debug\database.accdb
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\bin\Debug\IS-Team1-Project.exe.config
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\bin\Debug\IS-Team1-Project.exe
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\bin\Debug\IS-Team1-Project.pdb
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\bin\Debug\itextsharp.dll
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\bin\Debug\itextsharp.xml
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.AssemblyReference.cache
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminCourses.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminHome.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminMain.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminProfile.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminProgress.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.AdminQuries.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.frmLogin.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.LoginAdmin.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.PrathamFlopIS.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.Properties.Resources.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentCourses.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentHome.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentMain.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentProfile.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentQuizManager.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentQuizView.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS_Team1_Project.StudentRegister.resources
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.GenerateResource.cache
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.CoreCompileInputs.cache
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS-Team1-Project.csproj.CopyComplete
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS-Team1-Project.exe
+C:\Users\muaaz\Desktop\Wits\2nd\INFO\INFO2001A\Project\Application\FInal App\IS-Team1-Project\obj\Debug\IS-Team1-Project.pdb

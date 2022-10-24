@@ -30,14 +30,14 @@ namespace IS_Team1_Project
             using (OleDbConnection connection = new OleDbConnection(connectionstring))
             {
                 connection.Open();
-                OleDbCommand command = new OleDbCommand("SELECT * FROM courses WHERE student_num = @student_num AND course_enrolled = @course_enrolled", connection);
+                OleDbCommand command = new OleDbCommand("SELECT * FROM courses WHERE student_num = @student_num", connection);
                 command.Parameters.AddWithValue("@student_num", frmLogin.StudentNum);
                 command.Parameters.AddWithValue("@course_enrolled", bEnrolled);
                 OleDbDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
                     // If enrolled is false
-                    bEnrolled = reader["course_enrolled"] as bool? ?? false;
+                    bEnrolled = bool.Parse(reader["course_enrolled"].ToString());
 
                     if (bEnrolled)
                     {
@@ -133,12 +133,14 @@ namespace IS_Team1_Project
                 {
                     connection.Open();
                     OleDbCommand command = new OleDbCommand("UPDATE courses set course_1=@Course1, course_2=@Course2, course_enrolled = true WHERE student_num = @student_num", connection);
-                    command.Parameters.AddWithValue("@Course1", Course1);
-                    command.Parameters.AddWithValue("@Course2", Course2);
+                    command.Parameters.AddWithValue("@Course1", course1);
+                    command.Parameters.AddWithValue("@Course2", course2);
                     command.Parameters.AddWithValue("@student_num", frmLogin.StudentNum);
                     command.ExecuteNonQuery();
                     connection.Close();
                 }
+
+                StudentMain.loadform(new StudentCourses());
             }
         }
 
